@@ -15,7 +15,7 @@ function watch () {
     server: {
       baseDir: './src/'
     }
-  })
+  });
   gulp.watch('./src/css/*.css').on('change', browserSync.reload);
   gulp.watch('./src/*.html').on('change', browserSync.reload);
 }

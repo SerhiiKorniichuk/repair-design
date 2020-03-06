@@ -3,18 +3,20 @@
   border: none
   border-radius: 2px
   text-transform: uppercase
-  border: 1px solid $light 
   cursor: pointer
   box-shadow: none
   transition: 0.2s
   &--primary
-    background-color: rgba($primary, 0.7)
+    background-color: rgba($primary, 1)
+    border: 1px solid $primary
     color: $light
     &:hover
+      border: 1px solid $light
       box-shadow: 0px 5px 15px rgba($light, 0.2)
-      background-color: rgba($primary, 1)
+      background-color: rgba($light, 0.2)
   &--outline
     background-color: transparent
+    border: 1px solid $light
     color: $light
     &:hover
       box-shadow: 0px 5px 15px rgba($light, 0.2)

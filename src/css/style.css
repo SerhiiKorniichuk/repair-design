@@ -323,18 +323,20 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  border: 1px solid #fff;
   cursor: pointer;
   box-shadow: none;
   transition: 0.2s; }
   .button--primary {
-    background-color: rgba(227, 184, 115, 0.7);
+    background-color: #e3b873;
+    border: 1px solid #E3B873;
     color: #fff; }
     .button--primary:hover {
+      border: 1px solid #fff;
       box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
-      background-color: #e3b873; }
+      background-color: rgba(255, 255, 255, 0.2); }
   .button--outline {
     background-color: transparent;
+    border: 1px solid #fff;
     color: #fff; }
     .button--outline:hover {
       box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
@@ -6,7 +7,7 @@
   font-display: swap; }
 
 @font-face {
-  font-family: 'Futura Demi';
+  font-family: 'FuturaDemiС';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -325,7 +326,7 @@ template {
   cursor: pointer;
   box-shadow: none;
   transition: 0.2s;
-  font-family: Futura DemiC, sans-serif;
+  font-family: FuturaDemiC, sans-serif;
   line-height: 1.07rem;
   font-weight: 600;
   font-size: 13px; }
@@ -396,7 +397,7 @@ body {
   text-transform: uppercase;
   line-height: 1.14rem;
   font-weight: 600;
-  font-family: Futura DemiC, sans-serif; }
+  font-family: FuturaDemiC, sans-serif; }
 
 .nav__item {
   color: #fff;
@@ -416,7 +417,7 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  font-family: Futura DemiC, sans-serif;
+  font-family: FuturaDemiC, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 1.14rem;
@@ -465,7 +466,7 @@ body {
     top: 0;
     max-width: 5.85rem;
     height: 100%;
-    font-family: Futura DemiC, sans-serif;
+    font-family: FuturaDemiC, sans-serif;
     font-weight: 600; }
   .hero__scroll-down {
     display: flex;

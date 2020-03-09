@@ -607,10 +607,18 @@ body {
     width: 100%; } }
 
 @media screen and (max-width: 500px) {
+  .container {
+    width: 90%; }
   .title {
+    margin-top: 3px;
     font-size: 23px;
     line-height: 132.83%;
     max-width: 27.14rem; }
   .subtitle {
+    margin-top: 10px;
     font-size: 18px;
-    margin-bottom: 35px; } }
+    margin-bottom: 33px; }
+  .hero__text {
+    max-width: 26.5rem; }
+  .hero__button--primary {
+    margin-bottom: 2.4rem; } }

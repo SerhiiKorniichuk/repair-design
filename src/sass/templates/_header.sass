@@ -13,12 +13,16 @@
 .logo
   color: $primary
   text-transform: uppercase
+  line-height: 16px
+  font-weight: 600
+  font-family: FuturaDemiC, sans-serif
 .nav
   &__item
     color: $light
     text-decoration: none
     text-transform: uppercase
     margin-right: 40px
+    line-height: 16px
     transition: color 0.2s
     &:hover
       color: $primary
@@ -26,4 +30,22 @@
   color: $primary
 .contacts
   &__phone
-    margin-right: 45px 
+    font-family: FuturaDemiC, sans-serif
+    font-style: normal
+    font-weight: 600
+    line-height: 16px
+    margin-right: 45px
+    text-decoration: none
+    transition: color 0.2s
+    &:hover
+      color: $light
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      background-color: $primary
+      margin-top: -14px
+      width: 120px
+      height: 1px
+  &__button
+    padding: 13px 21px

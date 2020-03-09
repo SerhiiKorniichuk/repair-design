@@ -25,6 +25,8 @@
     top: 0
     max-width: 82px
     height: 100%
+    font-family: FuturaDemiC, sans-serif
+    font-weight: 600
   &__scroll-down
     display: flex
     position: absolute
@@ -36,9 +38,22 @@
     min-height: 97px
     background-color: $dark
     font-family: 'Yeseva One', cursive
+    font-size: 12px
+    line-height: 138.6%
     text-transform: uppercase
     text-decoration: none
     color: $light
+    &:hover
+      &::before
+        content: ''
+        display: flex
+        position: absolute
+        margin-top: 8px
+        margin-right: 100px
+        transform: translateX(-22px)
+        background-color: $primary
+        width: 105px
+        height: 1px
     &::after
       content: ''
       width: 29px
@@ -51,7 +66,10 @@
     max-width: 504px
     font-size: 22px
     line-height: 30px
+    font-style: normal
+    font-weight: normal
   &__button
+    padding: 19px 26px
     margin-right: 20px
 
 .instagram
@@ -67,10 +85,16 @@
     color: $primary
     transform: rotate(90deg)
     line-height: 0.8
+    transition: color 0.2s
+    &:hover
+      color: $light
+      &::after
+        background-color: $light
     &::after
       content: ''
       width: 50px
-      height: 1px
+      height: 2px
+      border-radius: 2px
       background-color: $primary
       margin-left: 10px
 .title
@@ -78,5 +102,8 @@
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
   font-size: 40px
+  font-style: normal
+  font-weight: normal
+  line-height: 53px
   &--primary
     color: $primary

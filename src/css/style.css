@@ -325,7 +325,7 @@ template {
   cursor: pointer;
   box-shadow: none;
   transition: 0.2s;
-  font-family: FuturaDemiC, sans-serif;
+  font-family: Futura DemiC, sans-serif;
   line-height: 1.07rem;
   font-weight: 600;
   font-size: 13px; }
@@ -396,7 +396,7 @@ body {
   text-transform: uppercase;
   line-height: 1.14rem;
   font-weight: 600;
-  font-family: FuturaDemiC, sans-serif; }
+  font-family: Futura DemiC, sans-serif; }
 
 .nav__item {
   color: #fff;
@@ -416,7 +416,7 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  font-family: FuturaDemiC, sans-serif;
+  font-family: Futura DemiC, sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: 1.14rem;
@@ -465,7 +465,7 @@ body {
     top: 0;
     max-width: 5.85rem;
     height: 100%;
-    font-family: FuturaDemiC, sans-serif;
+    font-family: Futura DemiC, sans-serif;
     font-weight: 600; }
   .hero__scroll-down {
     display: flex;

@@ -489,7 +489,7 @@ body {
       position: absolute;
       margin-top: 8px;
       margin-right: 100px;
-      transform: translateX(-22px);
+      transform: translateX(-24px);
       background-color: #E3B873;
       width: 105px;
       height: 1px; }
@@ -566,7 +566,10 @@ body {
 
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .hero__scroll-down:hover::before {
+    transform: translateX(-24px);
+    width: 90px; } }
 
 @media screen and (max-width: 1030px) {
   .nav__item {

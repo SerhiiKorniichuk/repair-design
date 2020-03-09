@@ -3,11 +3,12 @@
     &__scroll-down
       display: none
   
-  
 @media screen and ( max-width: 1320px )
   .nav
     &__item
       margin-right: 2rem
+      &:first-child
+        margin-left: 0rem
   .contacts
     &__phone
       margin-right: 2rem
@@ -39,6 +40,10 @@
       display: none
 
 @media screen and ( max-width: 576px )
+  .hero
+    &__text
+      max-width: 27.7rem
+
   .contacts
     &__phone
       color: $light
@@ -48,13 +53,18 @@
     &__button
       display: none
 
-@media screen and ( max-width: 576px )
+@media screen and ( max-width: 530px )
   .hero
-    &__text
-      max-width: 27.7rem
+    &__button
+      &--primary
+        display: block
+        width: 100%
+        margin-bottom: 1.85rem
+      &--outline
+        display: block
+        width: 100%
 
 @media screen and ( max-width: 500px )
-
   .title
     font-size: 23px
     line-height: 132.83%
@@ -62,11 +72,3 @@
   .subtitle
     font-size: 18px
     margin-bottom: 35px
-  .hero
-    &__button
-      display: block
-      min-width: 100%
-      margin-bottom: 1.85rem
-
-
-

@@ -456,7 +456,7 @@ body {
     height: 100%;
     background: rgba(19, 19, 19, 0.7); }
   .hero__content {
-    margin-left: 4.28rem;
+    margin-left: 2.4rem;
     position: relative;
     max-width: 47.85rem; }
   .hero__instagram {
@@ -555,16 +555,6 @@ body {
 @media screen and (max-height: 660px) {
   .hero__scroll-down {
     display: none; } }
-
-@media screen and (max-width: 1440px) {
-  .menu {
-    transform: translateX(-10px); }
-  .logo {
-    transform: translateX(-16px); }
-  .contacts {
-    transform: translateX(16px); }
-  .hero__content {
-    margin-left: 2.4rem; } }
 
 @media screen and (max-width: 1320px) {
   .nav__item {

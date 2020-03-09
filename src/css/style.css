@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
@@ -556,6 +555,16 @@ body {
 @media screen and (max-height: 660px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 1440px) {
+  .menu {
+    transform: translateX(-10px); }
+  .logo {
+    transform: translateX(-16px); }
+  .contacts {
+    transform: translateX(16px); }
+  .hero__content {
+    margin-left: 2.4rem; } }
 
 @media screen and (max-width: 1320px) {
   .nav__item {

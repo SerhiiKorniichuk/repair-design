@@ -2,6 +2,21 @@
   .hero
     &__scroll-down
       display: none
+@media screen and ( max-width: 1445px )
+  .row
+    justify-content: space-between
+  .col
+    flex-basis: 31.8%
+  .card
+    &__text
+      bottom: 8.8rem
+    &__price-tag
+      bottom: -1.7rem
+
+  .design
+    &__section
+      margin: 7.142rem 0rem 1.28rem 0rem
+
 
 @media screen and ( max-width: 1320px )
   .nav
@@ -43,6 +58,9 @@
     width: 98%
     margin: 0 auto
   
+  .card
+    margin-bottom: 0rem
+
   .page-subtitle
     max-width: 550px
 
@@ -98,6 +116,20 @@
     &__button
       &--primary
         margin-bottom: 2.4rem
+  .types
+    &__section
+        margin: 7.142rem 0rem 3.25rem 0rem
+
+  .section
+    &-title
+      &__heading
+        &--white
+        color: $light
+        font-size: 22px
+  .page-subtitle
+    &__text
+      &--white
+        color: $light
 
 
   .row
@@ -106,9 +138,10 @@
     width: 100%
 
   .card
+    margin-bottom: -6rem 
     &__text
       margin: 0
-      bottom: 11.8rem
+      bottom: 11.55rem
       max-width: 22.5rem
     &__price-tag
       text-align: center
@@ -126,3 +159,6 @@
       line-height: 137%
       font-style: normal
       font-weight: normal
+
+  .design
+    background-color: $dark

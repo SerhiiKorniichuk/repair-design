@@ -684,9 +684,7 @@ img {
     width: 98%;
     margin: 0 auto; }
   .page-subtitle {
-    max-width: 550px; }
-  .card__price-tag {
-    text-align: center; } }
+    max-width: 550px; } }
 
 @media screen and (max-width: 768px) {
   .hero__content {
@@ -741,6 +739,7 @@ img {
     bottom: 11.8rem;
     max-width: 22.5rem; }
   .card__price-tag {
+    text-align: center;
     bottom: -0.65rem;
     padding: 0.8rem 1rem;
     min-width: 15.7rem; }

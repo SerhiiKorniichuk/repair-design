@@ -392,6 +392,7 @@ img {
 .card {
   margin-bottom: -6rem; }
   .card img {
+    display: block;
     width: 100%; }
   .card__text {
     position: relative;

@@ -2,22 +2,7 @@
   .hero
     &__scroll-down
       display: none
-@media screen and ( max-width: 1445px )
-  .row
-    justify-content: space-between
-  .col
-    flex-basis: 31.8%
-  .card
-    &__text
-      bottom: 8.8rem
-    &__price-tag
-      bottom: -1.7rem
-
-  .design
-    &__section
-      margin: 7.142rem 0rem 1.28rem 0rem
-
-
+    
 @media screen and ( max-width: 1320px )
   .nav
     &__item
@@ -37,17 +22,14 @@
         &::before
           transform: translateX(-24px)
           width: 90px
-        
-
-@media screen and ( max-width: 1030px )
   .nav
     &__item
       margin-right: 1.5rem
   .contacts
     &__phone
       margin-right: 1.5rem
-  
-@media screen and ( max-width: 992px )
+
+@media screen and ( max-width: 991px )
   .nav
     &__item
      display: none
@@ -77,6 +59,12 @@
   .hero
     &__text
       max-width: 27.7rem
+    &__button
+      display: block
+      width: 100%
+      &--primary
+        margin-bottom: 2.4rem
+        margin-bottom: 1.85rem
 
   .contacts
     &__phone
@@ -86,17 +74,6 @@
         display: none
     &__button
       display: none
-
-@media screen and ( max-width: 530px )
-  .hero
-    &__button
-      &--primary
-        display: block
-        width: 100%
-        margin-bottom: 1.85rem
-      &--outline
-        display: block
-        width: 100%
 
 @media screen and ( max-width: 500px )
   .container
@@ -113,9 +90,7 @@
   .hero
     &__text
       max-width: 26.5rem
-    &__button
-      &--primary
-        margin-bottom: 2.4rem
+
   .types
     &__section
         margin: 7.142rem 0rem 3.25rem 0rem
@@ -123,6 +98,7 @@
   .section
     &-title
       &__heading
+        font-size: 22px
         &--white
           color: $light
           font-size: 22px

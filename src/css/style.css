@@ -714,8 +714,7 @@ img {
     padding: 2.357rem 3.5rem 1.928rem;
     background-color: #131313;
     color: #fff;
-    max-width: 36.142rem;
-    max-height: 36.357rem; }
+    max-width: 36.142rem; }
   .modal__close {
     position: absolute;
     margin: 0.785rem 0.857rem 0px 0px;
@@ -741,12 +740,13 @@ img {
   .modal__input {
     margin-bottom: 3.428rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1.147rem; }
+      margin-bottom: 0rem; }
   .modal__policy {
-    margin-top: 0;
-    padding: 0; }
+    margin-bottom: 2.768rem; }
   .modal__button {
-    padding: 1.357rem 1.5rem 1.357rem 1.5rem; }
+    align-self: flex-end;
+    padding: 1.357rem 1.5rem 1.357rem 1.5rem;
+    border-radius: 0; }
 
 @media screen and (max-height: 660px) {
   .hero__scroll-down {

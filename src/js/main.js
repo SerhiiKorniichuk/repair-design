@@ -40,11 +40,21 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
-  // closeModal.on('keydown', function (event) {
-  //   if (event.code == 'Escape') {
-  //     modal.removeClass('modal--visible');
-  //   }
-  // });
+  $(document).on('keydown', function (event) {
+    if (event.code == 'Escape') {
+      modal.removeClass('modal--visible');
+    }
+  });
+  $(document).on('click', function (event) {
+    if (event.target == modal) {
+      modal.removeClass('modal--visible');
+    }
+  });
+
+
+
+
+
 
   //initialize swiper slider
   var mySwiper = new Swiper ('.swiper-container', {
@@ -57,16 +67,16 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  })
+  });
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + 10 + bullets.width() +10)
-  bullets.css('left', prev.width() + 10)
+  next.css('left', prev.width() + 10 + bullets.width() +10);
+  bullets.css('left', prev.width() + 10);
 });
 
-var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+var top_show = 300; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
 var delay = 1000; // Задержка прокрутки
 $(document).ready(function() {
   $(window).scroll(function () { // При прокрутке попадаем в эту функцию

@@ -48,7 +48,39 @@ $(document).ready(function () {
   $(document).on('click', '.modal', function () {
     modal.removeClass('modal--visible'); 
   });
+
+
+  var SwiperProjects = new Swiper ('.projects__swiper-container',  {
+    loop: true,
+    pagination: {
+      el: '.projects__swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.projects__swiper-button-next',
+      prevEl: '.projects__swiper-button-prev',
+    },
+  });
+
+  var nextProjects = $('.projects__swiper-button-next');
+  var prevProjects = $('.projects__swiper-button-prev');
+  var bulletsProjects = $('.projects__swiper-pagination');
+
+  nextProjects.css('left', prevProjects.width() + 10 + bulletsProjects.width() + 10);
+  bulletsProjects.css('left', prevProjects.width() + 10);
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

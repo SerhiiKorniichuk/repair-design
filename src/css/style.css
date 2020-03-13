@@ -425,9 +425,6 @@ template {
 .col-31-8 {
   flex-basis: 31.8%; }
 
-.col-50 {
-  max-width: 50%; }
-
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -738,6 +735,10 @@ img {
     line-height: 162%;
     max-width: 31.571rem;
     margin-bottom: 46px; }
+  .projects__content-left {
+    max-width: 31.571rem; }
+  .projects__content-right {
+    max-width: 48.5rem; }
   .projects__col {
     display: flex;
     margin-bottom: 64px; }
@@ -752,12 +753,12 @@ img {
     margin-left: 40px; }
   .projects__swiper-slide {
     display: flex;
-    flex-wrap: wrap; }
-    .projects__swiper-slide img {
-      height: 100%;
-      width: 100%; }
+    flex-wrap: wrap;
+    margin-bottom: 64px; }
 
 .swiper-text {
+  width: 35%;
+  margin-right: 35px;
   padding-bottom: 36px; }
   .swiper-text__heading {
     font-family: Yeseva One, cursive;
@@ -908,7 +909,9 @@ img {
     .nav__item:first-child {
       margin-left: 0rem; }
   .contacts__phone {
-    margin-right: 2rem; } }
+    margin-right: 2rem; }
+  .projects__content-right {
+    max-width: 40rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -919,7 +922,9 @@ img {
   .nav__item {
     margin-right: 1.5rem; }
   .contacts__phone {
-    margin-right: 1.5rem; } }
+    margin-right: 1.5rem; }
+  .projects__content-right {
+    max-width: 37rem; } }
 
 @media screen and (max-width: 991px) {
   .nav__item {

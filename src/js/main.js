@@ -66,8 +66,8 @@ $(document).ready(function () {
   var prevProjects = $('.projects__swiper-button-prev');
   var bulletsProjects = $('.projects__swiper-pagination');
 
-  nextProjects.css('left', prevProjects.width() + 10 + bulletsProjects.width() + 10);
-  bulletsProjects.css('left', prevProjects.width() + 10);
+  nextProjects.css('left', prevProjects.width() + 17 + bulletsProjects.width() + 17);
+  bulletsProjects.css('left', prevProjects.width() + 20);
 });
 
 

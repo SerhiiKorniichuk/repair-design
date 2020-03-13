@@ -1,12 +1,58 @@
 .projects
+  padding: 128px 0px 92px 0px
+  &__section-title
+    text-align: left
+  &__heading
+    font-family: Yeseva One
+    font-style: normal
+    font-weight: normal
+    font-size: 27px
+    line-height: 37px
+    letter-spacing: -0.07em
+    text-transform: uppercase
+    color: $primary
+    margin-top: -3px
+  &__title-word
+    display: flex
+    align-items: center
+    &::after
+      content: ''
+      margin-left: 34px
+      width: 92px
+      height: 1px
+      background-color: $primary
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 162%
+    max-width: 31.571rem
+    margin-bottom: 46px
+
+  &__col
+    display: flex
+    margin-bottom: 64px
+  &__col-left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__col-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-left: 40px
+ 
   &__swiper-slide
     display: flex
-    flex-wrap: wrap
-  &__swiper-text
-    flex-basis: 50%
+    flex-wrap: wrap 
+    & img
+      height: 100%
+      width: 100%
+      // max-width: 679px
+      // max-height: 482px
 
 .swiper-text
-  padding-bottom: 3rem
+  padding-bottom: 36px
   &__heading
     font-family: Yeseva One, cursive
     font-style: normal
@@ -15,18 +61,17 @@
     line-height: 138.6%
     text-transform: uppercase
     color: $primary
-    margin: 0px 0px 9px 0px
+    margin: 0px 0px 7px 0px
   &__description
     font-style: normal
     font-weight: normal
     font-size: 1.071rem
     line-height: 135.8%
-
 .swiper
   &-button
     &-prev
       bottom: 0
-      left: 0
+      left: 1px
       top: auto
       width: 42px
       height: 14px
@@ -51,4 +96,6 @@
 
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
-  bottom: -2px
+  bottom: -1px
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0px 10px

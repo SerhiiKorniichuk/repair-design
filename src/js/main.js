@@ -45,10 +45,8 @@ $(document).ready(function () {
       modal.removeClass('modal--visible');
     }
   });
-  $(document).on('click', function (event) {
-    if (event.target == modal) {
-      modal.removeClass('modal--visible');
-    }
+  $(document).on('click', '.modal', function () {
+    modal.removeClass('modal--visible'); 
   });
 
 

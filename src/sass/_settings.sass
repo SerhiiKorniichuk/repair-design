@@ -8,7 +8,12 @@ body
 img
   max-width: 100%
 .section
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
+    &--left
+      text-align: left
     &__heading
       text-align: center
       font-family: 'Yeseva One', cursive
@@ -16,6 +21,27 @@ img
       font-style: normal
       font-weight: normal
       font-size: 20px
+      &--left
+        text-align: left
+      &--primary
+        line-height: 138.6%
+        letter-spacing: -0.07em
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        margin-left: 15px
+        width: 92px
+        height: 1px
+        background-color: $primary
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 1.285rem
+      line-height: 158.5%
+      max-width: 31.571rem
     &__image
       display: flex
       align-items: center
@@ -28,12 +54,6 @@ img
         border-radius: 30px
         margin: 0px 10px
 
-.row
-  display: flex
-  align-items: flex-start
-  justify-content: space-between
-.col
-  flex-basis: 31.8%
 .card
   margin-bottom: -6rem
   & img

@@ -40,7 +40,7 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
-  // closeModal.on('keydown', function () {
+  // closeModal.on('keydown', function (event) {
   //   if (event.code == 'Escape') {
   //     modal.removeClass('modal--visible');
   //   }

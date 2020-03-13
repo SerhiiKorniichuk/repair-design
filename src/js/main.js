@@ -45,6 +45,25 @@ $(document).ready(function () {
   //     modal.removeClass('modal--visible');
   //   }
   // });
+
+  //initialize swiper slider
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + 10 + bullets.width() +10)
+  bullets.css('left', prev.width() + 10)
 });
 
 var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"

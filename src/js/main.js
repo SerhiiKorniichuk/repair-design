@@ -63,6 +63,21 @@ $(document).ready(function () {
     },
   });
 
+  var stepsProjects = new Swiper ('.steps__swiper-container',  {
+    loop: true,
+    pagination: {
+      el: '.steps__pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+    navigation: {
+      nextEl: '.steps__button-next',
+      prevEl: '.steps__button-prev',
+    },
+  });
+
   var nextProjects = $('.projects__swiper-button-next');
   var prevProjects = $('.projects__swiper-button-prev');
   var bulletsProjects = $('.projects__swiper-pagination');

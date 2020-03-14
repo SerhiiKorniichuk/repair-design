@@ -14,8 +14,11 @@
       margin-right: 2rem
   
   .projects
-    &__content-right
-      max-width: 40rem
+    &__swiper-container
+      &--text
+        margin-top: -260px
+      &--image
+        max-width: 570px
 
 @media screen and ( max-width: 1200px )
   html
@@ -34,8 +37,19 @@
       margin-right: 1.5rem
 
   .projects
-    &__content-right
-      max-width: 37rem
+    &__heading
+      font-size: 22px
+      line-height: 138.6%
+    &__section-title
+      max-width: 25rem
+    &__swiper-container
+      max-width: 28rem
+      &--text
+        margin-top: -200px
+      &--image
+        max-width: 510px
+    &__swiper-text
+      width: 37%
 
 @media screen and ( max-width: 991px )
   .nav
@@ -54,6 +68,34 @@
   .page-subtitle
     max-width: 550px
 
+  .projects
+    &__row
+      max-width: 80%
+      margin: 0 auto
+    &__section-title
+      text-align: center
+      min-width: 100%
+      align-items: center
+    &__description
+      max-width: 315px
+      margin-bottom: 36px
+    &__title-word
+      justify-content: center
+      &::after
+        display: none
+    &__swiper-slider
+      display: block
+    &__swiper-text
+      width: 50%
+      margin: 0
+    &__swiper-container
+      &--image
+        min-width: 100%
+      &--text
+        max-width: 100%
+        align-self: start
+        margin: 0
+  
 @media screen and ( max-width: 768px )
   .hero
     &__content
@@ -62,6 +104,8 @@
       display: none
     &__scroll-down
       display: none
+  .go-up
+    display: none
 
 @media screen and ( max-width: 576px )
   .hero
@@ -82,6 +126,19 @@
         display: none
     &__button
       display: none
+  .projects
+    &__row
+      max-width: 100%
+    &__description
+      font-size: 14px
+      max-width: 305px
+      margin-top: 25px
+      margin-bottom: 39px
+    &__swiper-slide
+      margin-bottom: 38px
+    &__swiper-container
+      &--image
+        max-height: 100%
 
 @media screen and ( max-width: 500px )
   .container
@@ -146,3 +203,22 @@
 
   .design
     background-color: $dark
+
+  .swiper-text
+    &__heading
+      font-size: 14px
+    &__description
+      font-size: 14px
+
+  .projects
+    &__description
+      margin-top: 22px
+      margin-bottom: 39px
+    &__swiper-slide
+      margin-bottom: 38px
+    &__swiper-container
+      &--image
+        max-height: 100%
+
+    &__nav
+      margin-bottom: 10px

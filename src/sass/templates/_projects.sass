@@ -1,7 +1,16 @@
 .projects
   padding: 128px 0px 92px 0px
+  &__row
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+  
   &__section-title
     text-align: left
+    display: flex
+    flex-direction: column
+    max-width: 31.57rem
   &__heading
     font-family: Yeseva One
     font-style: normal
@@ -11,7 +20,8 @@
     letter-spacing: -0.07em
     text-transform: uppercase
     color: $primary
-    margin-top: -3px
+    margin: 0px
+    margin-top: -3px 
   &__title-word
     display: flex
     align-items: center
@@ -27,7 +37,8 @@
     font-size: 1.285rem
     line-height: 162%
     max-width: 31.571rem
-    margin-bottom: 46px
+    margin-top: 22px 
+    margin-bottom: 0px
 
   &__content-left
     max-width: 31.571rem
@@ -47,6 +58,15 @@
     justify-content: space-between
     margin-left: 40px
  
+  &__swiper-container
+    display: flex
+    margin: 0
+    &--text
+      margin-top: -320px
+      max-width: 442px
+    &--image
+      max-width: 679px
+
   &__swiper-slide
     display: flex
     flex-wrap: wrap
@@ -74,6 +94,7 @@
 .swiper
   &-button
     &-prev
+      margin-left: auto
       bottom: 0
       left: 1px
       top: auto
@@ -83,6 +104,7 @@
       &::after
         display: none
     &-next
+      margin-right: auto
       bottom: 0
       top: auto
       width: 42px
@@ -91,9 +113,11 @@
       &::after
         display: none
   &-pagination
+    bottom: 0
+    top: auto
     &-bullet
-      width: 0.683rem
-      height: 0.683rem
+      width: 10px
+      height: 10px
       background-color: rgba($light, 0.3)
       &-active
         background-color: $light

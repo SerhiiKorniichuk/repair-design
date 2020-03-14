@@ -1094,10 +1094,38 @@ img {
     font-size: 14px; }
   .projects__description {
     margin-top: 22px;
-    margin-bottom: 39px; }
+    margin-bottom: 39px;
+    line-height: 170.84%; }
   .projects__swiper-slide {
     margin-bottom: 38px; }
   .projects__swiper-container--image {
     max-height: 100%; }
   .projects__nav {
-    margin-bottom: 10px; } }
+    margin-bottom: 2px; } }
+
+@media screen and (max-width: 376px) {
+  .projects__description {
+    margin-top: 25px;
+    margin-bottom: 41px;
+    line-height: 163.84%; }
+  .projects__swiper-slide {
+    margin-bottom: 25px; }
+  .projects__swiper-text {
+    margin-right: -9px;
+    padding-bottom: 32px;
+    padding-right: 10px; }
+  .projects__swiper-container--image {
+    margin-top: -2px;
+    margin-bottom: 32px;
+    max-height: 202px; }
+  .projects__swiper-button-prev {
+    margin-left: 50%;
+    transform: translateX(-248%); }
+  .projects__swiper-button-next {
+    margin-left: 50%;
+    transform: translateX(-248%); }
+  .projects__swiper-pagination {
+    margin-left: 50%;
+    transform: translateX(-120%); }
+  .swiper-text__heading {
+    margin-bottom: 9px; } }

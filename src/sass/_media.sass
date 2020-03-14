@@ -214,6 +214,7 @@
     &__description
       margin-top: 22px
       margin-bottom: 39px
+      line-height: 170.84%
     &__swiper-slide
       margin-bottom: 38px
     &__swiper-container
@@ -221,4 +222,35 @@
         max-height: 100%
 
     &__nav
-      margin-bottom: 10px
+      margin-bottom: 2px
+
+@media screen and ( max-width: 376px )
+  .projects
+    &__description
+      margin-top: 25px
+      margin-bottom: 41px
+      line-height: 163.84%
+    &__swiper-slide
+      margin-bottom: 25px
+    &__swiper-text
+      margin-right: -9px
+      padding-bottom: 32px
+      padding-right: 10px 
+    &__swiper-container
+      &--image
+        margin-top: -2px
+        margin-bottom: 32px
+        max-height: 202px
+    &__swiper-button-prev
+      margin-left: 50%
+      transform: translateX(-248%)
+    &__swiper-button-next
+      margin-left: 50%
+      transform: translateX(-248%)
+    &__swiper-pagination  
+      margin-left: 50%
+      transform: translateX(-120%)
+
+  .swiper-text
+    &__heading
+      margin-bottom: 9px

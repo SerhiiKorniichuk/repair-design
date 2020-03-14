@@ -52,6 +52,7 @@ $(document).ready(function () {
 
   var SwiperProjects = new Swiper ('.projects__swiper-container',  {
     loop: true,
+    effect: 'fade',
     pagination: {
       el: '.projects__swiper-pagination',
       type: 'bullets',

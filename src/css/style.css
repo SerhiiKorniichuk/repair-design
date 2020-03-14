@@ -394,8 +394,8 @@ template {
 .button-go-up {
   display: none;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 10px;
+  bottom: 10px;
   cursor: pointer;
   font-size: 150%;
   width: 50px;

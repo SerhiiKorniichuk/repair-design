@@ -63,7 +63,7 @@ $(document).ready(function () {
     },
   });
 
-  var menu = ['<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>']
+  var menu = ['<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>'];
   var stepsProjects = new Swiper ('.steps__swiper-container',  {
     loop: true,
     pagination: {
@@ -85,25 +85,14 @@ $(document).ready(function () {
 
   nextProjects.css('left', prevProjects.width() + 17 + bulletsProjects.width() + 17);
   bulletsProjects.css('left', prevProjects.width() + 20);
-});
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-var top_show = 500; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
-var delay = 1000; // Задержка прокрутки
-$(document).ready(function() {
+  var top_show = 500; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 1000; // Задержка прокрутки
   $(window).scroll(function () { // При прокрутке попадаем в эту функцию
     /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
     if ($(this).scrollTop() > top_show) $('.button-go-up ').fadeIn();
@@ -115,4 +104,7 @@ $(document).ready(function() {
       scrollTop: 0
     }, delay);
   });
+
+
+  new WOW().init();
 });

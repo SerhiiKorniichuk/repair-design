@@ -45,9 +45,9 @@ $(document).ready(function () {
       modal.removeClass('modal--visible');
     }
   });
-  $(document).on('click', '.modal', function () {
-    modal.removeClass('modal--visible'); 
-  });
+  // $(document).on('click', '.modal', function () {
+  //   modal.removeClass('modal--visible'); 
+  // });
 
 
   var SwiperProjects = new Swiper ('.projects__swiper-container',  {

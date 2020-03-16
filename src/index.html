@@ -50,6 +50,7 @@
       <a href="#" class="hero__scroll-down">Листайте вниз</a>
     </section>
     <!-- section_hero -->
+
     <!-- #### PROJECTS - START #### -->
     <section class="section section--dark projects">
       <div class="container">
@@ -155,28 +156,52 @@
     </section>
     <!-- #### PROJECTS - END #### -->
 
+    <!-- #### CONTROL - START #### -->
     <section class="section control">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title control__section-title">
           <h2 class="section-title__heading">Онлайн контроль</h2>
-          <!-- /.section-title__heading -->
           <div class="section-title__image">
-            <img src="./img/camera.png" alt="camera_image">
+            <img src="./img/camera.svg" alt="camera_image">
           </div>
-          <!-- /.section-title__image -->
         </div>
-        <!-- /.section-title -->
+        <!-- SECTION-TITLE -->
+        <div class="control__video video">
+          <img class="video__play-button" src="img/play-icon2.svg" alt="play">
+        </div>
+        <!-- VIDEO -->
+        <div class="control__text-block">
+          <p class="control__description">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы&nbsp;получить ссылку на трансляцию.</p>
+        </div>
+        <!-- TEXT-BLOCK -->
+        <form action="#" class="form control__form">
+          <div class="control__form-elements control__name-form">
+            <label for="user-name" class="label form__label control__label">Имя</label>
+            <input type="text" class="input control__input control__input-name" id="user-name" placeholder="Как вас зовут:">
+          </div>
+          <div class="control__form-elements control__email-form">
+            <label for="user-phone" class="label form__label control__label">Телефон</label>
+            <input type="tel" class="input control__input control__input-email" id="user-phone" placeholder="Ваш номер телефона:">
+          </div>
+          <button class="control__form-elements button control__form-button">Отправить</button>
+          <div class="policy control__policy">
+            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox control__checkbox" checked>
+            <label for="policy-checkbox" class="policy__label control__label">Я соглашаюсь с обработкой данных</label>
+          </div>
+        </form>
+        <!-- FORM -->
       </div>
-      <!-- container -->
+      <!-- CONTAINER -->
     </section>
-    <!-- control -->
+    <!-- #### CONTROL - END #### -->
+
     <section class="section types">
       <div class="container">
         <div class="section-title types__section">
           <h2 class="section-title__heading">Виды ремонта</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image">
-            <img src="./img/repair_tools.png" alt="repair_tools">
+            <img src="./img/repair_tools.svg" alt="repair_tools">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -262,7 +287,7 @@
           <h2 class="section-title__heading section-title__heading--white">Дизайн проект</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image section-title__image--white">
-            <img src="./img/design.png" alt="design">
+            <img src="./img/design.svg" alt="design">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -358,54 +383,143 @@
     <section class="section section--dark steps">
       <div class="container">
         <div class="steps__content">
-          <div class="steps__row">
-              <div class="steps__section-title">
-                <span class="steps__description">как мы работаем</span>
-                <h3 class="steps__heading">6 шагов <span class="steps__heading--block">до цели</span></h3>
-              </div>
-              <!-- #### SLIDER #### -->
-              <div class="swiper-container steps__swiper-container">
-                <div class="swiper-wrapper swiper-no-swiping">
-                    <!-- #### SLIDE-1 START #### -->
-                    <div class="swiper-slide steps-slide steps__swiper-slide">
-                      <div class="steps-slide__text">
-                        <span class="steps-slide__number">1/6</span>
-                        <h3 class="steps-slide__title">Выезд на замеры помещения</h3>
-                        <p class="steps-slide__description-first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
-                        <p class="steps-slide__description-second">Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
-                      </div>
-                    </div>
-                    <!-- #### SLIDE-1 END #### -->
-                    <!-- #### SLIDE-2 START #### -->
-                    <div class="swiper-slide steps-slide steps__swiper-slide"></div>
-                    <!-- #### SLIDE-2 START #### -->
-                    <!-- #### SLIDE-3 START #### -->
-                    <div class="swiper-slide steps-slide steps__swiper-slide"></div>
-                    <!-- #### SLIDE-3 START #### -->
+          <div class="steps__row steps__row-left">
+            <div class="steps__section-title">
+              <span class="steps__description">как мы работаем</span>
+              <h3 class="steps__heading">6 шагов <span class="steps__heading--block">до цели</span></h3>
+            </div>
+            <!-- #### SLIDER #### -->
+            <div class="swiper-container steps__swiper-container">
+              <div class="swiper-wrapper swiper-no-swiping">
+                <!-- #### SLIDE-1 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <div class="steps-slide__text">
+                    <span class="steps-slide__number">1/6</span>
+                    <h3 class="steps-slide__title">Выезд на замеры помещения</h3>
+                    <p class="steps-slide__description steps-slide__description-first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                    <p class="steps-slide__description steps-slide__description-second">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                  </div>
                 </div>
-                <div class="swiper-button-prev steps__swiper-nav steps__button-prev"></div>
-                <div class="swiper-pagination steps__swiper-nav steps__pagination"></div>
-                <div class="swiper-button-next steps__swiper-nav steps__button-next"></div>
+                <!-- #### SLIDE-1 END #### -->
+                <!-- #### SLIDE-2 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <div class="steps-slide__text">
+                    <span class="steps-slide__number">1/6</span>
+                    <h3 class="steps-slide__title">Выезд на замеры помещения</h3>
+                    <p class="steps-slide__description steps-slide__description-first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                    <p class="steps-slide__description steps-slide__description-second">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                  </div>
+                </div>
+                <!-- #### SLIDE-2 START #### -->
+                <!-- #### SLIDE-3 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <div class="steps-slide__text">
+                    <span class="steps-slide__number">1/6</span>
+                    <h3 class="steps-slide__title">Выезд на замеры помещения</h3>
+                    <p class="steps-slide__description steps-slide__description-first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                    <p class="steps-slide__description steps-slide__description-second">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                  </div>
+                </div>
+                <!-- #### SLIDE-3 START #### -->
+                <!-- #### SLIDE-4 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <div class="steps-slide__text">
+                    <span class="steps-slide__number">1/6</span>
+                    <h3 class="steps-slide__title">Выезд на замеры помещения</h3>
+                    <p class="steps-slide__description steps-slide__description-first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                    <p class="steps-slide__description steps-slide__description-second">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                  </div>
+                </div>
+                <!-- #### SLIDE-4 START #### -->
+                <!-- #### SLIDE-5 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <div class="steps-slide__text">
+                    <span class="steps-slide__number">1/6</span>
+                    <h3 class="steps-slide__title">Выезд на замеры помещения</h3>
+                    <p class="steps-slide__description steps-slide__description-first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                    <p class="steps-slide__description steps-slide__description-second">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                  </div>
+                </div>
+                <!-- #### SLIDE-5 START #### -->
+                <!-- #### SLIDE-6 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <div class="steps-slide__text">
+                    <span class="steps-slide__number">1/6</span>
+                    <h3 class="steps-slide__title">Выезд на замеры помещения</h3>
+                    <p class="steps-slide__description steps-slide__description-first">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
+                    <p class="steps-slide__description steps-slide__description-second">Оценщик приходит, чтобы измерить комнату. <br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                  </div>
+                </div>
+                <!-- #### SLIDE-6 START #### -->
+              </div>
+              <div class="swiper-button-prev steps__swiper-nav steps__button-prev"></div>
+              <div class="swiper-pagination steps__swiper-nav steps__pagination"></div>
+              <div class="swiper-button-next steps__swiper-nav steps__button-next"></div>
             </div>
             <!-- #### SLIDER #### -->
           </div>
           <!-- ROW -->
-          <div class="steps__row">
+          <div class="steps__row steps__row-right">
             <!-- #### SLIDER #### -->
             <div class="swiper-container steps__swiper-container">
-              <div class="swiper-pagination steps__pagination"></div>
-              <div class="swiper-wrapper swiper-no-swiping">
-                  <!-- #### SLIDE-1 START #### -->
-                  <div class="swiper-slide steps-slide steps__swiper-slide">
-                    <img src="" alt="">
-                  </div>
-                  <!-- #### SLIDE-1 END #### -->
-                  <!-- #### SLIDE-2 START #### -->
-                  <div class="swiper-slide steps-slide steps__swiper-slide"></div>
-                  <!-- #### SLIDE-2 START #### -->
-                  <!-- #### SLIDE-3 START #### -->
-                  <div class="swiper-slide steps-slide steps__swiper-slide"></div>
-                  <!-- #### SLIDE-3 START #### -->
+              <div class="swiper-pagination steps__pagination steps__pagination-right pagination-steps"></div>
+              <div class="pagination-steps">
+                <div class="pagination-steps__block">
+                  <span class="pagination-steps__number">01</span>
+                  <span class="pagination-steps__description">Выезд на замер помещения</span>
+                </div>
+                <div class="pagination-steps__block">
+                  <span class="pagination-steps__number">02</span>
+                  <span class="pagination-steps__description">Выезд на замер помещения</span>
+                </div>
+                <div class="pagination-steps__block">
+                  <span class="pagination-steps__number">03</span>
+                  <span class="pagination-steps__description">Выезд на замер помещения</span>
+                </div>
+                <div class="pagination-steps__block">
+                  <span class="pagination-steps__number">04</span>
+                  <span class="pagination-steps__description">Выезд на замер помещения</span>
+                </div>
+                <div class="pagination-steps__block">
+                  <span class="pagination-steps__number">05</span>
+                  <span class="pagination-steps__description">Выезд на замер помещения</span>
+                </div>
+                <div class="pagination-steps__block">
+                  <span class="pagination-steps__number">06</span>
+                  <span class="pagination-steps__description">Выезд на замер помещения</span>
+                </div>
+              </div>
+              <div class="swiper-wrapper steps__swiper-wrapper swiper-no-swiping">
+                <!-- #### SLIDE-1 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <img src="./img/steps_slide_image.png" alt="steps_slide_imag">
+                </div>
+                <!-- #### SLIDE-1 END #### -->
+                <!-- #### SLIDE-2 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <img src="./img/steps_slide_image.png" alt="steps_slide_imag">
+                </div>
+                <!-- #### SLIDE-2 START #### -->
+                <!-- #### SLIDE-3 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <img src="./img/steps_slide_image.png" alt="steps_slide_imag">
+                </div>
+                <!-- #### SLIDE-3 START #### -->
+                <!-- #### SLIDE-4 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <img src="./img/steps_slide_image.png" alt="steps_slide_imag">
+                </div>
+                <!-- #### SLIDE-4 START #### -->
+                <!-- #### SLIDE-5 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <img src="./img/steps_slide_image.png" alt="steps_slide_imag">
+                </div>
+                <!-- #### SLIDE-5 START #### -->
+                <!-- #### SLIDE-6 START #### -->
+                <div class="swiper-slide steps-slide steps__swiper-slide">
+                  <img src="./img/steps_slide_image.png" alt="steps_slide_imag">
+                </div>
+                <!-- #### SLIDE-6 START #### -->
               </div>
             </div>
             <!-- #### SLIDER #### -->

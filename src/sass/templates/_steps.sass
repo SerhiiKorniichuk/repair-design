@@ -8,7 +8,12 @@
     justify-content: space-between
   &__row
     max-width: 50%
-    
+  &__row-left
+    // gwrhh
+  &__row-right
+    position: relative
+    display: flex
+
   &__description
     font-family: FuturaDemiC, sans-serif
     font-style: normal
@@ -34,7 +39,70 @@
         width: 92px
         height: 1px
         background-color: $primary
+  &__pagination-right
+    position: absolute
+    width: 30%
+    height: 50px
+    top: 0
+    right: 0
+  &__swiper-slide
+    margin-top: 150px
 
 
-.steps-slide
-  position: relative
+
+
+  &__number
+    font-family: Yeseva One, cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 25px
+    text-transform: uppercase
+  &__title
+    font-family: Yeseva One
+    font-style: normal
+    font-weight: normal
+    font-size: 1.071rem
+    line-height: 23px
+    text-transform: uppercase
+    color: $primary
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 1.071rem
+    line-height: 25px
+    max-width: 24.07rem
+
+.pagination-steps
+  display: flex
+  flex-wrap: wrap
+  
+  
+
+.pagination-steps__block
+  flex-basis: 33%
+  width: 25%
+  height: 50px
+
+.custom-paginators
+  font-size: 24px
+.steps__pagination-right
+	position: absolute
+	top: 0
+	right: 0
+	margin: 0
+
+.steps__pagination-right .swiper-pagination-bullet
+  border-radius: 0px
+  width: 25%
+  height: 50px
+  background-color: #fff
+  padding: 5px
+  margin-right: auto
+  color: #000
+  opacity: 1
+  background: rgba(0,0,0,0.1)
+    
+.steps__pagination-right .swiper-pagination-bullet-active
+	color:#fff
+	background: #007aff

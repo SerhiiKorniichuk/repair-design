@@ -63,14 +63,15 @@ $(document).ready(function () {
     },
   });
 
+  var menu = ['<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>']
   var stepsProjects = new Swiper ('.steps__swiper-container',  {
     loop: true,
     pagination: {
-      el: '.steps__pagination',
+      el: '.swiper-pagination.steps__pagination, .swiper-pagination.steps__pagination-right',
       clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      },
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
     },
     navigation: {
       nextEl: '.steps__button-next',

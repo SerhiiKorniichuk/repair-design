@@ -1,0 +1,106 @@
+.control
+  margin-top: -341px
+  padding-bottom: 46px
+  &__section-title
+    color: $light
+  &__video
+    position: relative
+    display: flex
+    max-width: 58.357rem
+    min-height: 31rem
+    margin: 0 auto
+    margin-top: 2.229rem
+    background: $dark url('../img/video-image.jpg') no-repeat center
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba(#000, 0.8)
+  &__text-block
+    max-width: 40.785rem
+    margin: 0 auto
+    text-align: center
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 1.428rem
+    line-height: 175%
+    text-align: center
+    &::before
+      content: ''
+      display: block
+      margin: 0 auto
+      margin-top: 62px
+      margin-bottom: 25px
+      width: 55px
+      height: 2px
+      border-radius: 30px
+      background-color: $primary
+  &__form
+    display: flex
+    justify-content: space-between  
+    max-width: 770px
+    margin: 0 auto
+    margin-top: 60px
+    flex-wrap: wrap
+    flex-basis: 33%
+  &__label
+    font-size: 1.071rem
+    line-height: 20px
+    color: rgba($dark-input, 0.5)
+  &__input
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    min-width: 232px
+    padding: 0
+    padding-bottom: 6px
+    margin-top: -3px
+    line-height: 24px
+    border-bottom: 1px solid rgba($dark-input, 0.3)
+    &::placeholder
+      color: $dark-input
+  &__name-form
+    display: flex
+    flex-direction: column
+  &__input-name
+  &__email-form
+    display: flex
+    flex-direction: column
+    margin-left: 9px
+  &__form-button
+    padding: 1.1rem 4.2rem
+    color: $light
+    border: 0.07rem solid $primary
+    background-color: $primary
+    font-family: 'FuturaDemiC', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 15px
+    line-height: 18px
+    &:hover
+      color: $primary
+      border: 0.07rem solid $primary
+      box-shadow: 2px 2px 5px  rgba($primary, 0.2)
+      background-color: $light
+  &__policy
+    display: flex
+    margin: 0 auto
+    margin-top: 32px
+    align-items: center
+    font-style: normal
+    font-weight: normal
+    font-size: 1.142rem
+    line-height: 22px
+
+
+
+
+.video
+  &__play-button
+    max-width: 85px
+    max-height: 85px
+    position: relative
+    margin: auto

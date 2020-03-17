@@ -419,6 +419,17 @@ template {
   .button-go-up:hover {
     opacity: 1; }
 
+div.invalid {
+  color: #bf2121;
+  font-family: FuturaDemiC, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.071rem;
+  line-height: 1.428rem; }
+
+input.invalid {
+  border-bottom: 1px solid #bf2121; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -1098,10 +1109,10 @@ img {
   .modal__dialog {
     position: relative;
     padding: 2.357rem 3.49rem 1.928rem 3.5rem;
-    background: #131313 url("../img/modal_bg.svg") no-repeat center;
+    background: #131313 url("../img/modal_bg.svg") no-repeat center/100%;
+    background-size: cover;
     color: #fff;
-    max-width: 36.142rem;
-    max-height: 36.357rem; }
+    max-width: 36.142rem; }
   .modal__close {
     position: absolute;
     margin: 0.785rem 0.857rem 0px 0px;
@@ -1125,14 +1136,16 @@ img {
     display: flex;
     flex-direction: column;
     margin-top: -0.48rem; }
+  .modal__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.428rem; }
+    .modal__group--last {
+      margin-bottom: 0rem; }
   .modal__label {
     margin-bottom: -0.2rem; }
     .modal__label:last-of-type {
       margin-top: -0.4rem; }
-  .modal__input {
-    margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 0rem; }
   .modal__policy {
     margin-bottom: 2.768rem; }
   .modal__button {

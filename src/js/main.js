@@ -87,6 +87,68 @@ $(document).ready(function () {
   bulletsProjects.css('left', prevProjects.width() + 20);
 
 
+
+
+
+  var top_show = 500; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+  var delay = 1000; // Задержка прокрутки
+  $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+    /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+    if ($(this).scrollTop() > top_show) $('.button-go-up ').fadeIn();
+    else $('.button-go-up ').fadeOut();
+  });
+  $('.button-go-up ').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+    /* Плавная прокрутка наверх */
+    $('body, html').animate({
+      scrollTop: 0
+    }, delay);
+  });
+
+
+  // new WOW().init();
+
+
+
+
+  // Валидация форм
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+      },
+      userEmail: {
+        required: true,
+        email: true
+      },
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя должно содержать не меньше 2-х букв",
+        maxlength: "Имя должно содержать не больше 15-и букв"
+      },
+      userPhone: {
+        required: "Заполните поле"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email: name@domain.com"
+      }
+    }
+  });
+
+  $('[type=tel]').mask('+7 (000) 000-00-00');
+
+
+
+
   var el1 = $('.projects__row');
   var el2 = $('.control__container');
   var el3 = $('.types__container');
@@ -98,7 +160,7 @@ $(document).ready(function () {
   var el9 = $('.design__card2');
   var el10 = $('.design__card3');
   $(window).scroll(function(){
-    if ( $(this).scrollTop() > el1.offset().top - 980) {
+    if ( $(this).scrollTop() > el1.offset().top - 500) {
         el1.addClass('animkey');
     }
     if ( $(this).scrollTop() > el2.offset().top - 980) {
@@ -129,24 +191,4 @@ $(document).ready(function () {
       el10.addClass('animkeyForCards3');
     }
   });
-
-  
-
-
-  var top_show = 500; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
-  var delay = 1000; // Задержка прокрутки
-  $(window).scroll(function () { // При прокрутке попадаем в эту функцию
-    /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
-    if ($(this).scrollTop() > top_show) $('.button-go-up ').fadeIn();
-    else $('.button-go-up ').fadeOut();
-  });
-  $('.button-go-up ').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
-    /* Плавная прокрутка наверх */
-    $('body, html').animate({
-      scrollTop: 0
-    }, delay);
-  });
-
-
-  // new WOW().init();
 });

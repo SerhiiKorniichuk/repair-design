@@ -19,10 +19,10 @@
   &__dialog
     position: relative
     padding: 2.357rem 3.49rem 1.928rem 3.5rem
-    background: $dark url('../img/modal_bg.svg') no-repeat center
+    background: $dark url('../img/modal_bg.svg') no-repeat center / 100%
+    background-size: cover
     color: $light
     max-width: 36.142rem
-    max-height: 36.357rem
   &__close
     position: absolute
     margin: 0.785rem 0.857rem 0px 0px
@@ -46,14 +46,16 @@
     display: flex 
     flex-direction: column
     margin-top: -0.48rem
+  &__group
+    display: flex
+    flex-direction: column
+    margin-bottom: 3.428rem
+    &--last
+      margin-bottom: 0rem
   &__label
     margin-bottom: -0.2rem
     &:last-of-type
       margin-top: -0.4rem
-  &__input
-    margin-bottom: 3.428rem
-    &:last-of-type
-      margin-bottom: 0rem
   &__policy
     margin-bottom: 2.768rem
   &__button

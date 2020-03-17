@@ -1089,6 +1089,83 @@ img {
   color: #fff;
   background: #007aff; }
 
+.team {
+  padding: 100px 0px; }
+  .team__section {
+    margin-bottom: 1.28rem; }
+  .team__subtitle {
+    margin-bottom: 3.48rem;
+    max-width: 32rem; }
+  .team__row {
+    display: flex;
+    justify-content: center; }
+  .team__col {
+    margin: 50px 50px 0px; }
+  .team__card {
+    position: relative; }
+  .team__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -35px;
+    top: -35px;
+    min-width: 70px;
+    min-height: 70px;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
+    .team__icon img {
+      display: block; }
+  .team__image {
+    max-width: 19.445rem;
+    max-height: 25.473rem; }
+  .team__people-info {
+    position: relative;
+    padding-top: 22px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: -75px;
+    text-align: center;
+    background-color: #fff; }
+  .team__people-title {
+    display: block;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px; }
+  .team__people-subtitle {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    color: #959595; }
+  .team__people-xp-box {
+    max-width: 100%;
+    margin-top: 23px;
+    padding: 13px;
+    background-color: #E3B873;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff; }
+  .team__about {
+    max-width: 40.571rem;
+    font-size: 20px;
+    line-height: 34px; }
+    .team__about::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-top: 53px;
+      margin-bottom: 20px;
+      width: 55px;
+      height: 2px;
+      border-radius: 5px;
+      background-color: #E3B873; }
+
 .modal {
   opacity: 0;
   visibility: hidden;

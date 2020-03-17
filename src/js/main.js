@@ -111,40 +111,64 @@ $(document).ready(function () {
 
 
   // Валидация форм
-  $(".modal__form").validate({
-    errorClass: "invalid",
-    errorElement: "div",
-    rules: {
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15
-      },
-      userPhone: {
-        required: true,
-      },
-      userEmail: {
-        required: true,
-        email: true
-      },
-    },
-    messages: {
-      userName: {
-        required: "Заполните поле",
-        minlength: "Имя должно содержать не меньше 2-х букв",
-        maxlength: "Имя должно содержать не больше 15-и букв"
-      },
-      userPhone: {
-        required: "Заполните поле"
-      },
-      userEmail: {
-        required: "Заполните поле",
-        email: "Введите корректный email: name@domain.com"
-      }
-    }
-  });
+  var formsClass = [
+    ".modal__form",
+    ".footer__form",
+    ".control__form"
+  ];
 
-  $('[type=tel]').mask('+7 (000) 000-00-00');
+  for (var i = 0; i < formsClass.length; i++) {
+    console.log(fromsClass[i]);
+    formsValidate(fromsClass[i]);
+  }
+
+  function formsValidate (form) {
+    $(form).validate({
+      errorClass: "invalid",
+      errorElement: "div",
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        userPhone: {
+          required: true,
+        },
+        userEmail: {
+          required: true,
+          email: true
+        },
+      },
+      messages: {
+        userName: {
+          required: "Заполните поле",
+          minlength: "Имя должно содержать не меньше 2-х букв",
+          maxlength: "Имя должно содержать не больше 15-и букв"
+        },
+        userPhone: {
+          required: "Заполните поле"
+        },
+        userEmail: {
+          required: "Заполните поле",
+          email: "Введите корректный email: name@domain.com"
+        }
+      }
+    });
+
+    $('[type=tel]').mask('+7 (000) 000-00-00');
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1157,7 +1157,8 @@ img {
   background-color: #131313; }
   .footer__content {
     position: relative;
-    background: #131313 url("../img/footer_bg.png") no-repeat center/100%; }
+    background: #131313 url("../img/footer_bg.png") no-repeat center/100%;
+    background-size: cover; }
     .footer__content::before {
       content: '';
       position: absolute;

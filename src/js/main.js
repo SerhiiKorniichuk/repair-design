@@ -154,22 +154,6 @@ $(document).ready(function () {
     $('[type=tel]').mask('+7 (000) 000-00-00');
   }
 
-  // formsValidate(".modal__form");
-  // formsValidate(".footer__form");
-  // formsValidate(".control__form");
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   var el1 = $('.projects__row');
   var el2 = $('.control__container');
@@ -182,34 +166,34 @@ $(document).ready(function () {
   var el9 = $('.design__card2');
   var el10 = $('.design__card3');
   $(window).scroll(function(){
-    if ( $(this).scrollTop() > el1.offset().top - 500) {
+    if ( $(this).scrollTop() > el1.offset().top - $(window).height()) {
         el1.addClass('animkey');
     }
-    if ( $(this).scrollTop() > el2.offset().top - 980) {
+    if ( $(this).scrollTop() > el2.offset().top - $(window).height()) {
         el2.addClass('animkey');
     }
-    if ( $(this).scrollTop() > el3.offset().top - 980) {
+    if ( $(this).scrollTop() > el3.offset().top - $(window).height()) {
         el3.addClass('animkey');
     }
-    if ( $(this).scrollTop() > el4.offset().top - 980) {
+    if ( $(this).scrollTop() > el4.offset().top - $(window).height()) {
       el4.addClass('animkeyForCards1');
     }
-    if ( $(this).scrollTop() > el5.offset().top - 980) {
+    if ( $(this).scrollTop() > el5.offset().top - $(window).height()) {
       el5.addClass('animkeyForCards2');
     }
-    if ( $(this).scrollTop() > el6.offset().top - 980) {
+    if ( $(this).scrollTop() > el6.offset().top - $(window).height()) {
       el6.addClass('animkeyForCards3');
     }
-    if ( $(this).scrollTop() > el7.offset().top - 980) {
+    if ( $(this).scrollTop() > el7.offset().top - $(window).height()) {
       el7.addClass('animkey');
     }
-    if ( $(this).scrollTop() > el8.offset().top - 980) {
+    if ( $(this).scrollTop() > el8.offset().top - $(window).height()) {
       el8.addClass('animkeyForCards1');
     }
-    if ( $(this).scrollTop() > el9.offset().top - 980) {
+    if ( $(this).scrollTop() > el9.offset().top - $(window).height()) {
       el9.addClass('animkeyForCards2');
     }
-    if ( $(this).scrollTop() > el10.offset().top - 980) {
+    if ( $(this).scrollTop() > el10.offset().top - $(window).height()) {
       el10.addClass('animkeyForCards3');
     }
   });

@@ -158,6 +158,12 @@
       &--image
         max-height: 100%
 
+  .footer
+    &__content
+      background: $dark
+    &__wrap
+      background: $dark
+
 @media screen and ( max-width: 500px )
   .container
     width: 90%
@@ -286,16 +292,42 @@
       
     
 
-.policy
-  &__label
-    &::before
-      margin-top: 2px
-      margin-left: -1px
-      width: 1.5rem
-      height: 1.5rem
+  .policy
+    &__label
+      &::before
+        margin-top: 2px
+        margin-left: -1px
+        width: 1.5rem
+        height: 1.5rem
 
+  .footer
+    &__group
+      flex-basis: 100%
+      margin-top: 3.3rem
+    &__title-form
+      font-size: 20px
+      margin-bottom: 1.1rem
+      line-height: 138.6%
+    &__group
+      &-phone
+        margin-top: 3.8rem
+      &-question
+        margin-top: 3.9rem
+    &__label
+      font-size: 15px
+    &__input
+      font-size: 18px
+    &__policy
+      margin-top: 0.45rem
+    &__policy-label
+      margin-left: 1px
+      font-size: 16px
+      justify-content: start
+    &__button
+      margin-top: 5.56rem
+      min-width: 100%
+      padding: 1rem 4.2rem 1rem
 
-    
 
 @media screen and ( max-width: 376px )
   .projects

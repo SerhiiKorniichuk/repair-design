@@ -107,20 +107,15 @@ $(document).ready(function () {
 
   // new WOW().init();
 
+  var formsClass = [
+    ".modal__form",
+    ".footer__form",
+    ".control__form"
+  ];
 
-
-
-  // Валидация форм
-  // var formsClass = [
-  //   ".modal__form",
-  //   ".footer__form",
-  //   ".control__form"
-  // ];
-
-  // for (var i = 0; i < formsClass.length; i++) {
-  //   console.log(fromsClass[i]);
-  //   formsValidate(fromsClass[i]);
-  // }
+  for (var i = 0; i < formsClass.length; i++) {
+    formsValidate(formsClass[i]);
+  }
 
   function formsValidate (form) {
     $(form).validate({
@@ -159,9 +154,9 @@ $(document).ready(function () {
     $('[type=tel]').mask('+7 (000) 000-00-00');
   }
 
-  formsValidate(".modal__form");
-  formsValidate(".footer__form");
-  formsValidate(".control__form");
+  // formsValidate(".modal__form");
+  // formsValidate(".footer__form");
+  // formsValidate(".control__form");
 
 
 

@@ -421,7 +421,7 @@ template {
 
 div.invalid {
   color: #bf2121;
-  font-family: FuturaDemiC, sans-serif;
+  font-family: 'FuturaDemiC', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.071rem;
@@ -930,6 +930,7 @@ img {
     margin-left: 9px; }
   .control__form-button {
     padding: 1.1rem 4.2rem;
+    max-height: 51px;
     color: #fff;
     border: 0.07rem solid #E3B873;
     background-color: #E3B873;
@@ -1176,7 +1177,7 @@ img {
     margin: 0;
     margin-bottom: 3.1rem;
     padding: 0;
-    font-family: Yeseva One;
+    font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 1.428rem;
@@ -1355,7 +1356,11 @@ img {
   .projects__swiper-slide {
     margin-bottom: 38px; }
   .projects__swiper-container--image {
-    max-height: 100%; } }
+    max-height: 100%; }
+  .footer__content {
+    background: #131313; }
+  .footer__wrap {
+    background: #131313; } }
 
 @media screen and (max-width: 500px) {
   .container {
@@ -1469,13 +1474,37 @@ img {
       padding-bottom: 16px;
       margin-bottom: -26px;
       margin-top: 62px;
-      min-width: 100%; } }
-
-.policy__label::before {
-  margin-top: 2px;
-  margin-left: -1px;
-  width: 1.5rem;
-  height: 1.5rem; }
+      min-width: 100%; }
+  .policy__label::before {
+    margin-top: 2px;
+    margin-left: -1px;
+    width: 1.5rem;
+    height: 1.5rem; }
+  .footer__group {
+    flex-basis: 100%;
+    margin-top: 3.3rem; }
+  .footer__title-form {
+    font-size: 20px;
+    margin-bottom: 1.1rem;
+    line-height: 138.6%; }
+  .footer__group-phone {
+    margin-top: 3.8rem; }
+  .footer__group-question {
+    margin-top: 3.9rem; }
+  .footer__label {
+    font-size: 15px; }
+  .footer__input {
+    font-size: 18px; }
+  .footer__policy {
+    margin-top: 0.45rem; }
+  .footer__policy-label {
+    margin-left: 1px;
+    font-size: 16px;
+    justify-content: start; }
+  .footer__button {
+    margin-top: 5.56rem;
+    min-width: 100%;
+    padding: 1rem 4.2rem 1rem; } }
 
 @media screen and (max-width: 376px) {
   .projects__description {

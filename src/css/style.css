@@ -1089,6 +1089,13 @@ img {
   color: #fff;
   background: #007aff; }
 
+.team-and-clients {
+  background-color: #fff;
+  background-image: url("../img/bg_line2.svg"), url("../img/bg-city.svg");
+  background-repeat: no-repeat, repeat-x;
+  background-position-y: bottom;
+  background-size: cover, auto 50%; }
+
 .team {
   padding: 100px 0px; }
   .team__section {

@@ -69,13 +69,43 @@
     text-align: center
     text-transform: uppercase
 
+  &__adress-and-map
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
   &__map
     padding-top: 43px
     padding-bottom: 66px
     min-height: 465px
     max-width: 925px
+  &__adress
     margin: 0 auto
-    margin-bottom: 
+    max-width: 42.071rem
+  &__adress-text
+    display: block
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 28px
+    text-align: center
+    text-transform: uppercase
+    color: $primary
+  &__icon a
+    margin: 26px 8px 44px
+    display: inline-block
+    width: 28px
+    height: 28px
+    border-radius: 50%
+    background-color: $primary
+  &__email
+    background: url('../img/footer-email.svg') no-repeat center
+  &__instagram
+    background: url('../img/footer-instagram.svg') no-repeat center
+  
+  
 
 
   &__menu

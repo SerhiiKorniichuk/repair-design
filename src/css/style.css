@@ -1408,12 +1408,41 @@ img {
     line-height: 26px;
     text-align: center;
     text-transform: uppercase; }
+  .footer__adress-and-map {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
   .footer__map {
     padding-top: 43px;
     padding-bottom: 66px;
     min-height: 465px;
-    max-width: 925px;
-    margin: 0 auto; }
+    max-width: 925px; }
+  .footer__adress {
+    margin: 0 auto;
+    max-width: 42.071rem; }
+  .footer__adress-text {
+    display: block;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873; }
+  .footer__icon a {
+    margin: 26px 8px 44px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #E3B873; }
+  .footer__email {
+    background: url("../img/footer-email.svg") no-repeat center; }
+  .footer__instagram {
+    background: url("../img/footer-instagram.svg") no-repeat center; }
   .footer__menu {
     background-color: #131313;
     padding: 3.469rem 0rem 3.458rem 0rem; }
@@ -1595,6 +1624,8 @@ img {
   .team__about {
     display: none; }
   .clients {
+    display: none; }
+  .footer__menu {
     display: none; } }
 
 @media screen and (max-width: 500px) {

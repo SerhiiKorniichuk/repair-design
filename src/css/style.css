@@ -1409,7 +1409,11 @@ img {
     text-align: center;
     text-transform: uppercase; }
   .footer__map {
-    padding: 100px 0px; }
+    padding-top: 43px;
+    padding-bottom: 66px;
+    min-height: 465px;
+    max-width: 925px;
+    margin: 0 auto; }
   .footer__menu {
     background-color: #131313;
     padding: 3.469rem 0rem 3.458rem 0rem; }

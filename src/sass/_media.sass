@@ -20,6 +20,19 @@
       &--image
         max-width: 570px
 
+  .clients
+    &__row
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      margin-top: 45px
+    &__card
+      margin: 0px 50px
+      margin-bottom: 100px
+      &:last-of-type
+        margin-bottom: 0px
+
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -184,6 +197,24 @@
       background: $dark
     &__wrap
       background: $dark
+
+  .team-and-clients
+    padding: 0px 0px 210px 0px
+    background-color: $dark
+    background-image: none
+  
+  .team
+    &__section
+      color: $light
+    &__subtitle
+      color: $light
+    &__about-text
+      color: $light
+    &__about
+      display: none
+  .clients
+    display: none
+   
 
 @media screen and ( max-width: 500px )
   .container
@@ -389,3 +420,27 @@
     &__play-button
       max-width: 37px
       max-height: 37px
+
+  .team
+    margin-bottom: 27px
+    &__subtitle
+      max-width: 375px
+    &__row
+      display: flex
+      align-items: center
+    &__col
+      margin: 32px 0px 0px
+      margin-top: 121px
+      // margin-left: 25px
+      &:first-of-type
+        margin-top: 43px
+    &__image
+      max-width: 304px
+      & img
+        width: 100%
+        max-height: 357px
+        object-fit: cover
+    &__people-info
+      top: 50px
+      max-width: 77%
+    

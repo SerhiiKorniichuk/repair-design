@@ -1012,7 +1012,8 @@ input {
   padding-top: 30.15rem;
   padding-bottom: 35.800rem;
   margin-top: -470px;
-  background: #131313 url("../img/steps_bg.svg") no-repeat center; }
+  background: #131313 url("../img/steps_bg.svg") no-repeat center;
+  background-size: cover; }
   .steps__content {
     display: flex;
     justify-content: space-between; }

@@ -238,10 +238,11 @@ $(document).ready(function () {
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.751574, 37.573856],
-            zoom: 9
+            zoom: 9,
         }, {
             searchControlProvider: 'yandex#search'
         }),
+        
 
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
@@ -263,9 +264,8 @@ $(document).ready(function () {
             // её "ножки" (точки привязки).
             iconImageOffset: [-5, -38]
         });
-
-    myMap.geoObjects
-        .add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+        myMap.geoObjects.add(myPlacemark);
   });
 
 

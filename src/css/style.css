@@ -420,12 +420,22 @@ template {
     opacity: 1; }
 
 div.invalid {
+  position: absolute;
   color: #bf2121;
   font-family: 'FuturaDemiC', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.071rem;
+  font-size: 1rem;
   line-height: 1.428rem; }
+
+.control div.invalid {
+  margin-top: 50px; }
+
+.footer div.invalid {
+  margin-top: 45px; }
+
+.modal div.invalid {
+  margin-top: 40px; }
 
 input.invalid {
   border-bottom: 1px solid #bf2121; }

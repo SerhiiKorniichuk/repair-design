@@ -560,7 +560,10 @@ input {
   text-decoration: none;
   line-height: 1.14rem;
   font-weight: 600;
-  font-family: 'FuturaDemiC', sans-serif; }
+  font-family: 'FuturaDemiC', sans-serif;
+  transition: color 0.2s; }
+  .logo:hover {
+    color: #fff; }
 
 .nav__item {
   color: #fff;
@@ -1431,6 +1434,12 @@ input {
     text-align: center;
     text-transform: uppercase;
     color: #E3B873; }
+    .footer__adress-text--phone {
+      color: #E3B873;
+      text-decoration: none;
+      transition: color 0.2s; }
+      .footer__adress-text--phone:hover {
+        color: #fff; }
   .footer__icon a {
     margin: 26px 8px 0px;
     display: inline-block;

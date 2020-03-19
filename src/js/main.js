@@ -129,10 +129,11 @@ $(document).ready(function () {
         },
         userPhone: {
           required: true,
+          minlength: 18,
         },
         userEmail: {
           required: true,
-          email: true
+          email: true,
         },
       },
       messages: {
@@ -142,7 +143,8 @@ $(document).ready(function () {
           maxlength: "Имя должно содержать не больше 15-и букв"
         },
         userPhone: {
-          required: "Заполните поле"
+          required: "Заполните поле",
+          minlength: "Телефон должно содержать не меньше 10-и цифр"
         },
         userEmail: {
           required: "Заполните поле",
@@ -152,7 +154,41 @@ $(document).ready(function () {
     });
 
     $('[type=tel]').mask('+7 (000) 000-00-00');
+
+  
+    $('#agree').on('change', function(){
+    if($('#agree').prop('checked')){
+    $('#btn-sumbit').attr('disabled', false);
+    }else{
+    $('#btn-sumbit').attr('disabled', true);
+    }
+    });
+
+    $('#agree-footer').on('change', function(){
+      if($('#agree-footer').prop('checked')){
+      $('#btn-sumbit-footer').attr('disabled', false);
+      }else{
+      $('#btn-sumbit-footer').attr('disabled', true);
+      }
+    });
+
+    $('#agree-control').on('change', function(){
+      if($('#agree-control').prop('checked')){
+      $('#btn-button-control').attr('disabled', false);
+      }else{
+      $('#btn-button-control').attr('disabled', true);
+      }
+    });
+  
+  
   }
+
+  
+
+
+
+
+
 
 
   var el1 = $('.projects__row');

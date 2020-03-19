@@ -1,5 +1,5 @@
 .steps
-  padding-top: 38.595rem
+  padding-top: 30.15rem
   padding-bottom: 35.800rem
   margin-top: -470px
   background: $dark url('../img/steps_bg.svg') no-repeat center
@@ -8,9 +8,10 @@
     justify-content: space-between
   &__row
   &__row-left
+    margin-left: -9px
     max-width: 30% 
   &__row-right
-    max-width: 63% 
+    max-width: 62% 
     position: relative
     display: flex
 
@@ -22,6 +23,8 @@
     line-height: 21px
     text-transform: uppercase
   &__heading
+    margin-top: 12px
+    margin-bottom: 85px
     font-family: Yeseva One
     font-style: normal
     font-weight: normal
@@ -35,7 +38,7 @@
       &::after
         content: ''
         position: absolute
-        margin-left: 188px
+        margin-left: 212px
         width: 92px
         height: 1px
         background-color: $primary
@@ -47,7 +50,7 @@
     line-height: 25px
     text-transform: uppercase
   &__swiper-slide
-    // margin-top: 92px
+    margin-top: 0px
 
   &__number
     font-family: Yeseva One, cursive
@@ -70,16 +73,8 @@
     font-size: 1.071rem
     line-height: 25px
     max-width: 24.07rem
-  
-  &__swiper-container
-
-  &__button-prev
-    margin-top: 65px
-
 
 .steps-slide
-  &__text
-    margin-top: 58px
   &__title
     margin-top: 19px
     margin-bottom: 0px
@@ -98,31 +93,47 @@
     font-size: 15px
     &--first
       margin-top: 9px
+      margin-bottom: 0
       line-height: 169%
     &--second
+      margin-top: 12px
       line-height: 169%
-      margin-bottom: 88px
+      margin-bottom: 91px
   & img
     width: 100%
 
 .pagination-steps
   display: flex
-  margin-left: 10px
-  margin-top: 105px
+  margin-left: 0px
+  margin-top: 92px
   justify-content: space-between
   flex-wrap: wrap
   &__block
     color: $secondary
-    margin: 0px 50px 50px 50px
-    min-width: 20%
+    margin: 0px 70px 70px 30px
+    min-width: 136px
     &--1
       margin-left: 0
+    &--2
+      margin-right: 31px
     &--3
+      min-width: 90px
+      padding-left: 36px
       margin-right: 0
     &--4
+      margin-top: -30px
       margin-left: 0
+      margin-bottom: 0
+    &--5
+      margin-top: -30px
+      margin-right: 31px
+      margin-bottom: 0
     &--6
+      min-width: 90px
+      padding-left: 36px
+      margin-top: -30px
       margin-right: 0
+      margin-bottom: 49px
     &--active
       color: $light
   &__number
@@ -143,6 +154,10 @@
       width: 16px
       height: 1px
       background-color: $primary
+  &__description
+    font-size: 15px
+    line-height: 18px  
+  
 
 
 

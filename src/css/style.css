@@ -916,6 +916,7 @@ input {
     padding-bottom: 6px;
     margin-top: -3px;
     line-height: 24px;
+    color: #131313;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
     .control__input::-webkit-input-placeholder {
       color: #363636; }

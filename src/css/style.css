@@ -1444,7 +1444,7 @@ input {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.429rem;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
@@ -1654,6 +1654,11 @@ input {
     display: none; }
   .clients {
     display: none; }
+  .footer__adress-and-map {
+    margin-top: 0px; }
+  .footer__adress {
+    margin-bottom: 40px;
+    order: 5; }
   .footer__menu {
     display: none; } }
 

@@ -1567,6 +1567,8 @@ input {
     margin: 0 auto;
     margin-top: 20px;
     max-width: 210px; }
+  .control__input {
+    color: #fff; }
   .control__policy {
     margin-top: 0px; }
   .team__row {

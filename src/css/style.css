@@ -537,6 +537,9 @@ img {
     font-size: 1.41rem;
     line-height: 1.928rem; }
 
+input {
+  outline: none; }
+
 .header {
   position: fixed;
   top: 0;

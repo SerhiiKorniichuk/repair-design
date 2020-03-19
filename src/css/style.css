@@ -1175,10 +1175,16 @@ input {
   background-size: cover, auto 600px; }
 
 .team {
-  padding: 100px 0px 80px; }
+  padding: 1px 0px 80px; }
   .team__section {
     margin-bottom: 1.28rem; }
+  .team__wrap {
+    margin-top: -409px; }
+  .team__heading {
+    color: #fff;
+    margin-top: 0; }
   .team__subtitle {
+    color: #fff;
     margin-bottom: 3.48rem;
     max-width: 32rem; }
     .team__subtitle-text {
@@ -1261,7 +1267,7 @@ input {
   margin-bottom: 11px; }
 
 .clients__subtitle {
-  margin-top: 15px;
+  margin-top: 21px;
   max-width: 360px; }
 
 .clients__subtitle-text {
@@ -1276,7 +1282,7 @@ input {
 .clients__card {
   position: relative;
   max-width: 26.857rem;
-  padding: 24px 21px 67px;
+  padding: 26px 21px 67px;
   background-color: #fff;
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.04); }
 
@@ -1297,7 +1303,7 @@ input {
   font-family: 'Yeseva One', cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.285rem;
+  font-size: 1.29rem;
   line-height: 23px;
   color: #131313;
   margin-left: 1.642rem; }
@@ -1305,7 +1311,7 @@ input {
 .client__review {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.071rem;
+  font-size: 1.08rem;
   line-height: 180%;
   color: #959595; }
 
@@ -1427,7 +1433,7 @@ input {
   .footer__wrap {
     position: relative;
     margin: 0 auto;
-    margin-top: -224px;
+    margin-top: -225px;
     padding-top: 2.3rem;
     padding-bottom: 2.457rem;
     max-width: 63.071rem;
@@ -1483,7 +1489,7 @@ input {
     text-align: center;
     text-transform: uppercase; }
   .footer__adress-and-map {
-    margin-top: 51px;
+    margin-top: 49px;
     position: relative;
     display: flex;
     align-items: center;
@@ -1516,7 +1522,8 @@ input {
       .footer__adress-text--phone:hover {
         color: #fff; }
   .footer__icon a {
-    margin: 24px 6px 0px;
+    margin: 24px 8px 0px;
+    margin-left: 3px;
     display: inline-block;
     width: 27px;
     height: 27px;
@@ -1532,7 +1539,7 @@ input {
     background: url("../img/footer-instagram.svg") no-repeat center; }
   .footer__menu {
     background-color: #131313;
-    padding: 3.469rem 0rem 3.458rem 0rem; }
+    padding: 3.3rem 0rem 3.458rem 0rem; }
 
 @media screen and (max-height: 660px) {
   .hero__scroll-down {

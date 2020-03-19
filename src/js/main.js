@@ -1,34 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function(event) { 
-//   const modal = document.querySelector('.modal');
-//   const modalBtn = document.querySelectorAll('[data-toggle=modal]')
-//   const closeBtn = document.querySelector('.modal__close');
-//   const switchModal = () => {
-//     modal.classList.toggle('modal--visible');
-//   }
-//   const closeModal = () => {
-//     modal.classList.remove('modal--visible');
-//   }
-
-//   modalBtn.forEach(element => {
-//     element.addEventListener('click', switchModal);
-//   });
-
-//   closeBtn.addEventListener('click', switchModal);
-
-//   document.addEventListener('click', function (e) {
-//     if (e.target == modal) {
-//       closeModal ();
-//     }
-//   });
-  
-//   document.addEventListener('keydown', function(event) {
-//      {
-//       closeModal ();
-//     }
-//   });
-
-// });
-
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle="modal"]'),
@@ -50,32 +19,19 @@ $(document).ready(function () {
   // });
 
 
+
+
+  // ###### SLIDER 1 START ###### //
   var SwiperProjects = new Swiper ('.projects__swiper-container',  {
     loop: true,
     effect: 'fade',
     pagination: {
       el: '.projects__swiper-pagination',
-      type: 'bullets',
+      type: 'bullets'
     },
     navigation: {
       nextEl: '.projects__swiper-button-next',
       prevEl: '.projects__swiper-button-prev',
-    },
-  });
-
-  var menu = ['<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>', '<div class="custom-paginators"><span>01</span>Выезд на замер помещения</div>'];
-  var stepsProjects = new Swiper ('.steps__swiper-container',  {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination.steps__pagination, .swiper-pagination.steps__pagination-right',
-      clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (menu[index]) + '</span>';
-        },
-    },
-    navigation: {
-      nextEl: '.steps__button-next',
-      prevEl: '.steps__button-prev',
     },
   });
 
@@ -85,8 +41,137 @@ $(document).ready(function () {
 
   nextProjects.css('left', prevProjects.width() + 17 + bulletsProjects.width() + 17);
   bulletsProjects.css('left', prevProjects.width() + 20);
+  // ###### SLIDER 1 END ###### //
+
+  // ###### SLIDER 2 START ###### //
+  var stepsProjects = new Swiper ('.steps__swiper-container',  {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination.steps__pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.steps__button-next',
+      prevEl: '.steps__button-prev',
+    },
+  });
+
+  var nextSteps = $('.steps__button-next');
+  var prevSteps = $('.steps__button-prev');
+  var bulletsSteps = $('.swiper-pagination.steps__pagination');
+
+  nextSteps.css('left', prevSteps.width() + 17 + bulletsSteps.width() + 17);
+  bulletsSteps.css('left', prevSteps.width() + 20);
 
 
+  var slideNum = 1,
+      slideNumber = $('.steps__slide-number'),
+      slideFirstNumber = $('.steps__slide-first__number');
+  var blockNumber = [ '.pagination-steps__block',
+                      '.pagination-steps__block--1',
+                      '.pagination-steps__block--2',
+                      '.pagination-steps__block--3',
+                      '.pagination-steps__block--4',
+                      '.pagination-steps__block--5',
+                      '.pagination-steps__block--6',
+                    ];
+  var ariaLabelArr = ['[aria-label = "Go to slide 1"]',
+                      '[aria-label = "Go to slide 2"]',
+                      '[aria-label = "Go to slide 3"]',
+                      '[aria-label = "Go to slide 4"]',
+                      '[aria-label = "Go to slide 5"]',
+                      '[aria-label = "Go to slide 6"]'
+                    ];   
+
+  nextSteps.on('click', function() {
+    if (slideNum == 6) {
+      slideNum = 0;
+      
+    }
+      slideNum +=1;
+      slideFirstNumber.text(slideNum);
+    
+      $(blockNumber[0]).removeClass('pagination-steps__block--active');
+      $(blockNumber[slideNum]).addClass('pagination-steps__block--active');
+  });
+  prevSteps.on('click', function() {
+    if (slideNum == 1) {
+      slideNum = 7;  
+    }
+      slideNum -= 1;
+      slideFirstNumber.text(slideNum);
+      $(blockNumber[0]).removeClass('pagination-steps__block--active');
+      $(blockNumber[slideNum]).addClass('pagination-steps__block--active');
+  });
+
+  $(ariaLabelArr[0]).on('click', function() {
+    slideNumber.text('1/6');
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[1]).addClass('pagination-steps__block--active');
+  });
+  $(ariaLabelArr[1]).on('click', function() { 
+    slideNumber.text('2/6');
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[2]).addClass('pagination-steps__block--active');
+  });    
+  $(ariaLabelArr[2]).on('click', function() {
+    slideNumber.text('3/6');
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[3]).addClass('pagination-steps__block--active');
+  });
+  $(ariaLabelArr[3]).on('click', function() {
+    slideNumber.text('4/6');
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[4]).addClass('pagination-steps__block--active');
+  }); 
+  $(ariaLabelArr[4]).on('click', function() {
+    slideNumber.text('5/6');
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[5]).addClass('pagination-steps__block--active');
+  });
+  $(ariaLabelArr[5]).on('click', function() {
+    slideNumber.text('6/6');
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[6]).addClass('pagination-steps__block--active');
+  }); 
+    
+  $(blockNumber[1]).on('click', function () {
+    $(ariaLabelArr[0]).click();
+    slideNumber.text('1/6');   
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[1]).addClass('pagination-steps__block--active');
+  });
+  $(blockNumber[2]).on('click', function () {
+    $(ariaLabelArr[1]).click();
+    slideNumber.text('2/6');   
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[2]).addClass('pagination-steps__block--active');
+  });
+  $(blockNumber[3]).on('click', function () {
+    $(ariaLabelArr[2]).click();
+    slideNumber.text('3/6');   
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[3]).addClass('pagination-steps__block--active');
+  });
+  $(blockNumber[4]).on('click', function () {
+    $(ariaLabelArr[3]).click();
+    slideNumber.text('4/6');   
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[4]).addClass('pagination-steps__block--active');
+  });
+  $(blockNumber[5]).on('click', function () {
+    $(ariaLabelArr[4]).click();
+    slideNumber.text('5/6');   
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[5]).addClass('pagination-steps__block--active');
+  });
+  $(blockNumber[6]).on('click', function () {
+    slideNumber.text('6/6');   
+    $(ariaLabelArr[5]).click();
+    $(blockNumber[0]).removeClass('pagination-steps__block--active');
+    $(blockNumber[6]).addClass('pagination-steps__block--active');
+  });
+  // ###### SLIDER 2 END ###### //
 
 
 
@@ -183,14 +268,6 @@ $(document).ready(function () {
   
   }
 
-  
-
-
-
-
-
-
-
   var el1 = $('.projects__row');
   var el2 = $('.control__container');
   var el3 = $('.types__container');
@@ -267,9 +344,4 @@ $(document).ready(function () {
         myMap.behaviors.disable('scrollZoom');
         myMap.geoObjects.add(myPlacemark);
   });
-
-
-
-
-
 });

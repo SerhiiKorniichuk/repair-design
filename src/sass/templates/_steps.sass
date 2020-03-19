@@ -7,10 +7,10 @@
     display: flex
     justify-content: space-between
   &__row
-    max-width: 50%
   &__row-left
-    // gwrhh
+    max-width: 30% 
   &__row-right
+    max-width: 63% 
     position: relative
     display: flex
 
@@ -39,17 +39,15 @@
         width: 92px
         height: 1px
         background-color: $primary
-  &__pagination-right
-    position: absolute
-    width: 30%
-    height: 50px
-    top: 0
-    right: 0
+  &__slide-number
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    text-transform: uppercase
   &__swiper-slide
-    margin-top: 150px
-
-
-
+    // margin-top: 92px
 
   &__number
     font-family: Yeseva One, cursive
@@ -72,37 +70,82 @@
     font-size: 1.071rem
     line-height: 25px
     max-width: 24.07rem
+  
+  &__swiper-container
+
+  &__button-prev
+    margin-top: 65px
+
+
+.steps-slide
+  &__text
+    margin-top: 58px
+  &__title
+    margin-top: 19px
+    margin-bottom: 0px
+    max-width: 262px
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 22px
+    text-transform: uppercase
+    color: $primary
+  &__description
+    font-style: normal
+    font-weight: normal
+    max-width: 337px
+    font-size: 15px
+    &--first
+      margin-top: 9px
+      line-height: 169%
+    &--second
+      line-height: 169%
+      margin-bottom: 88px
+  & img
+    width: 100%
 
 .pagination-steps
   display: flex
+  margin-left: 10px
+  margin-top: 105px
+  justify-content: space-between
   flex-wrap: wrap
+  &__block
+    color: $secondary
+    margin: 0px 50px 50px 50px
+    min-width: 20%
+    &--1
+      margin-left: 0
+    &--3
+      margin-right: 0
+    &--4
+      margin-left: 0
+    &--6
+      margin-right: 0
+    &--active
+      color: $light
+  &__number
+    position: relative
+    display: block
+    font-family: 'Yeseva One', cursive
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 21px
+    text-transform: uppercase
+    margin-bottom: 10px
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 2px
+      width: 16px
+      height: 1px
+      background-color: $primary
+
+
+
+
+
   
-  
-
-.pagination-steps__block
-  flex-basis: 33%
-  width: 25%
-  height: 50px
-
-.custom-paginators
-  font-size: 24px
-.steps__pagination-right
-	position: absolute
-	top: 0
-	right: 0
-	margin: 0
-
-.steps__pagination-right .swiper-pagination-bullet
-  border-radius: 0px
-  width: 25%
-  height: 50px
-  background-color: #fff
-  padding: 5px
-  margin-right: auto
-  color: #000
-  opacity: 1
-  background: rgba(0,0,0,0.1)
-    
-.steps__pagination-right .swiper-pagination-bullet-active
-	color:#fff
-	background: #007aff

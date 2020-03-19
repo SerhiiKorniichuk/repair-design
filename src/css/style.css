@@ -1020,7 +1020,7 @@ input {
     margin-left: -9px;
     max-width: 30%; }
   .steps__row-right {
-    max-width: 62%;
+    max-width: 63%;
     position: relative;
     display: flex; }
   .steps__description {
@@ -1118,30 +1118,18 @@ input {
   flex-wrap: wrap; }
   .pagination-steps__block {
     color: #959595;
-    margin: 0px 70px 70px 30px;
-    min-width: 136px; }
+    margin: 0px 0px 0px 30px;
+    min-width: 30%; }
     .pagination-steps__block--1 {
-      margin-left: 0; }
-    .pagination-steps__block--2 {
-      margin-right: 31px; }
-    .pagination-steps__block--3 {
-      min-width: 90px;
-      padding-left: 36px;
-      margin-right: 0; }
+      margin-left: 0;
+      margin-bottom: 40px; }
     .pagination-steps__block--4 {
-      margin-top: -30px;
       margin-left: 0;
       margin-bottom: 0; }
     .pagination-steps__block--5 {
-      margin-top: -30px;
-      margin-right: 31px;
-      margin-bottom: 0; }
+      margin-bottom: 44px; }
     .pagination-steps__block--6 {
-      min-width: 90px;
-      padding-left: 36px;
-      margin-top: -30px;
-      margin-right: 0;
-      margin-bottom: 49px; }
+      margin-bottom: 44px; }
     .pagination-steps__block--active {
       color: #fff; }
   .pagination-steps__number {
@@ -1703,14 +1691,14 @@ input {
     margin-bottom: 38px; }
   .projects__swiper-container--image {
     max-height: 100%; }
-  .footer__content {
-    background: #131313; }
-  .footer__wrap {
-    background: #131313; }
+  .steps {
+    display: none; }
   .team-and-clients {
     padding: 0px 0px 210px 0px;
     background-color: #131313;
     background-image: none; }
+  .team__wrap {
+    margin-top: 0px; }
   .team__section {
     color: #fff; }
   .team__subtitle {
@@ -1721,6 +1709,10 @@ input {
     display: none; }
   .clients {
     display: none; }
+  .footer__content {
+    background: #131313; }
+  .footer__wrap {
+    background: #131313; }
   .footer__adress-and-map {
     margin-top: 0px; }
   .footer__policy {
@@ -1730,6 +1722,8 @@ input {
   .footer__adress {
     margin-bottom: 40px;
     order: 5; }
+  .footer__adress-text {
+    font-size: 18px; }
   .footer__menu {
     display: none; }
   .footer__icon {

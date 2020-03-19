@@ -104,10 +104,14 @@
   &__icon a
     margin: 26px 8px 0px
     display: inline-block
-    width: 28px
-    height: 28px
+    width: 26px
+    height: 26px
+    border: 2px solid $primary
     border-radius: 50%
     background-color: $primary
+    &:hover
+      border: 2px solid transparent
+      background-color: rgba($light, 0.2)
   &__email
     background: url('../img/footer-email.svg') no-repeat center
   &__instagram

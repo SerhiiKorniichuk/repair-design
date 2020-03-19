@@ -1443,10 +1443,14 @@ input {
   .footer__icon a {
     margin: 26px 8px 0px;
     display: inline-block;
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #E3B873;
     border-radius: 50%;
     background-color: #E3B873; }
+    .footer__icon a:hover {
+      border: 2px solid transparent;
+      background-color: rgba(255, 255, 255, 0.2); }
   .footer__email {
     background: url("../img/footer-email.svg") no-repeat center; }
   .footer__instagram {

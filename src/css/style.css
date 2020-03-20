@@ -1537,6 +1537,9 @@ input {
     align-self: flex-end;
     padding: 1.25rem 3.2rem 1.25rem 3.2rem;
     border-radius: 0; }
+  .modal div.invalid {
+    position: absolute;
+    margin-top: 46px; }
 
 .ajax-success {
   opacity: 0;

@@ -249,12 +249,12 @@ $(document).ready(function () {
       messages: {
         userName: {
           required: "Заполните поле",
-          minlength: "Имя должно содержать не меньше 2-х букв",
-          maxlength: "Имя должно содержать не больше 15-и букв"
+          minlength: "Не меньше 2-х букв",
+          maxlength: "Не больше 15-и букв"
         },
         userPhone: {
           required: "Заполните поле",
-          minlength: "Телефон должно содержать не меньше 10-и цифр"
+          minlength: "Не меньше 10-и цифр"
         },
         userEmail: {
           required: "Заполните поле",

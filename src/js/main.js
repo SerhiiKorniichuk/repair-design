@@ -70,6 +70,7 @@ $(document).ready(function () {
   // ###### SLIDER 2 START ###### //
   var stepsProjects = new Swiper ('.steps__swiper-container',  {
     loop: true,
+    effect: 'fade',
     pagination: {
       el: '.swiper-pagination.steps__pagination',
       clickable: true,

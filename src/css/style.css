@@ -1155,14 +1155,6 @@ input {
     font-size: 15px;
     line-height: 18px; }
 
-.team-and-clients {
-  padding: 0px 0px 386px 0px;
-  background-color: #fff;
-  background-image: url("../img/bg_line2.svg"), url("../img/bg-city.svg");
-  background-repeat: no-repeat, repeat-x;
-  background-position-y: bottom;
-  background-size: cover, auto 600px; }
-
 .team {
   padding: 1px 0px 80px; }
   .team__section {
@@ -1340,6 +1332,14 @@ input {
 
 .client__object-text-days {
   margin-left: 1.071rem; }
+
+.team-and-clients {
+  padding: 0px 0px 386px 0px;
+  background-color: #fff;
+  background-image: url("../img/bg_line2.svg"), url("../img/bg-city.svg");
+  background-repeat: no-repeat, repeat-x;
+  background-position-y: bottom;
+  background-size: cover, auto 600px; }
 
 .modal {
   opacity: 0;

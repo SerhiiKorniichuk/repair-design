@@ -7,16 +7,27 @@ $(document).ready(function () {
     modal.toggleClass('modal--visible');
   });
   closeBtn.on('click', function () {
-    modal.toggleClass('modal--visible');
+    $('.modal__form')[0].reset();
+    $('div.invalid').remove();
+    $('.modal__form').find('.invalid').removeClass('invalid');
+    modal.toggleClass('modal--visible'); 
   });
   $(document).on('keydown', function (event) {
     if (event.code == 'Escape') {
+      $('.modal__form')[0].reset();
+      $('div.invalid').remove();
+      $('.modal__form').find('.invalid').removeClass('invalid');
       modal.removeClass('modal--visible');
     }
   });
-  // $(document).on('click', '.modal', function () {
-  //   modal.removeClass('modal--visible'); 
-  // });
+  $(document).on('click', function (e) {
+    if (modal.is(e.target)){
+      $('.modal__form')[0].reset();
+      $('div.invalid').remove();
+      $('.modal__form').find('.invalid').removeClass('invalid');
+      modal.removeClass('modal--visible'); 
+    }
+  });
 
   var ajaxSuccessModal = $('.ajax-success'),
       ajaxSuccessModalBtn = $('[data-toggle="ajax-success-close"]'),

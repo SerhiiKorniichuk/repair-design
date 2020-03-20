@@ -1,0 +1,114 @@
+.checkout
+  position: relative
+  margin-top: 164px
+  // padding-top: 70px
+  &__bg-image
+    padding: 
+    max-width: 1438px
+    margin: 0 auto
+    background-image: url('../img/checkout-circles.png'), url('../img/checkout-bg.png')
+    background-repeat: no-repeat, no-repeat
+    background-position: -8px -1px, -9px -56px
+  &__container
+    max-width: 1256px
+    width: 85%
+    margin: auto
+
+  &__row
+    display: flex
+    justify-content: space-between
+  &__col-right  
+    // flex-basis: 35%
+  &__col-left
+    position: relative
+    flex-basis: 55%
+  &__steps
+    // padding-right: 30px
+    display: block 
+    position: absolute
+    font-family: 'FuturaMediumC', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 1.286rem
+    line-height: 21px
+    &--1
+      max-width: 28.143rem
+      left: 299px
+      top: 58px
+    &--2
+      left: 373px
+      top: 179px
+    &--3
+      left: 396px
+      top: 344px
+    &--4
+      max-width: 20.428rem
+      left: 330px
+      top: 493px
+  &__form-box
+    margin-top: 50px
+    padding: 1.74rem 1.75rem 1.928rem 1.75rem
+    background: $dark url('../img/modal_bg.svg') no-repeat center / 100%
+    background-size: cover
+    // max-width: 95%
+    min-width: 36.142rem
+    max-height: 36.36rem
+  &__form
+    padding: 1.74rem 1.75rem 1.928rem 1.75rem
+    display: flex 
+    flex-direction: column
+    color: $light
+  &__title
+    color: $light
+    margin: 0 auto
+    max-width: 21.22rem
+    font-family: 'FuturaDemiC', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 1.429rem
+    line-height: 25px
+    text-align: center
+    margin-bottom: 1.3rem
+  &__group
+    display: flex
+    flex-direction: column
+    &--first
+      margin-bottom: 3.643rem
+    &--second
+      margin-bottom: 3.643rem
+    &--last
+      margin-bottom: 0rem
+  &__label
+    margin-bottom: -0.2rem
+    &:last-of-type
+      margin-top: -0.4rem
+  &__policy
+    margin-top: -2px
+    margin-bottom: 2.8rem
+  &__button
+    align-self: flex-end
+    padding: 1.25rem 2.6rem 1.25rem 2.6rem
+    border-radius: 0
+
+  &__saving-box
+    display: flex
+    align-items: center
+    margin-top: 2.572rem
+    margin-left: 2.358rem
+  &__saving-image
+    margin-top: 2px
+    max-width: 5.143rem
+    max-height: 5.143rem
+    border-radius: 50%
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2)
+  &__saving-text
+    margin-top: -2px
+    margin-left: 1.822rem
+    max-width: 22.715rem 
+    font-family: 'FuturaDemiC', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 1.429rem
+    line-height: 25px
+    color: $primary
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15)

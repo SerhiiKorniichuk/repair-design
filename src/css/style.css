@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url("../fonts/futura/FuturaMediumC.woff") format("woff"), url("../fonts/futura/FuturaMediumC.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -983,6 +990,113 @@ input {
   text-align: center;
   padding: 1.142rem 1.5rem; }
 
+.checkout {
+  position: relative;
+  margin-top: 164px; }
+  .checkout__bg-image {
+    max-width: 1438px;
+    margin: 0 auto;
+    background-image: url("../img/checkout-circles.png"), url("../img/checkout-bg.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -8px -1px, -9px -56px; }
+  .checkout__container {
+    max-width: 1256px;
+    width: 85%;
+    margin: auto; }
+  .checkout__row {
+    display: flex;
+    justify-content: space-between; }
+  .checkout__col-left {
+    position: relative;
+    flex-basis: 55%; }
+  .checkout__steps {
+    display: block;
+    position: absolute;
+    font-family: 'FuturaMediumC', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.286rem;
+    line-height: 21px; }
+    .checkout__steps--1 {
+      max-width: 28.143rem;
+      left: 299px;
+      top: 58px; }
+    .checkout__steps--2 {
+      left: 373px;
+      top: 179px; }
+    .checkout__steps--3 {
+      left: 396px;
+      top: 344px; }
+    .checkout__steps--4 {
+      max-width: 20.428rem;
+      left: 330px;
+      top: 493px; }
+  .checkout__form-box {
+    margin-top: 50px;
+    padding: 1.74rem 1.75rem 1.928rem 1.75rem;
+    background: #131313 url("../img/modal_bg.svg") no-repeat center/100%;
+    background-size: cover;
+    min-width: 36.142rem;
+    max-height: 36.36rem; }
+  .checkout__form {
+    padding: 1.74rem 1.75rem 1.928rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff; }
+  .checkout__title {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 21.22rem;
+    font-family: 'FuturaDemiC', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.429rem;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 1.3rem; }
+  .checkout__group {
+    display: flex;
+    flex-direction: column; }
+    .checkout__group--first {
+      margin-bottom: 3.643rem; }
+    .checkout__group--second {
+      margin-bottom: 3.643rem; }
+    .checkout__group--last {
+      margin-bottom: 0rem; }
+  .checkout__label {
+    margin-bottom: -0.2rem; }
+    .checkout__label:last-of-type {
+      margin-top: -0.4rem; }
+  .checkout__policy {
+    margin-top: -2px;
+    margin-bottom: 2.8rem; }
+  .checkout__button {
+    align-self: flex-end;
+    padding: 1.25rem 2.6rem 1.25rem 2.6rem;
+    border-radius: 0; }
+  .checkout__saving-box {
+    display: flex;
+    align-items: center;
+    margin-top: 2.572rem;
+    margin-left: 2.358rem; }
+  .checkout__saving-image {
+    margin-top: 2px;
+    max-width: 5.143rem;
+    max-height: 5.143rem;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2); }
+  .checkout__saving-text {
+    margin-top: -2px;
+    margin-left: 1.822rem;
+    max-width: 22.715rem;
+    font-family: 'FuturaDemiC', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.429rem;
+    line-height: 25px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15); }
+
 .design__section {
   margin: 7.142rem 0rem 1.28rem 0rem; }
 
@@ -1605,7 +1719,7 @@ input {
   .hero__scroll-down {
     display: none; } }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1375px) {
   .nav__item {
     margin-right: 2rem; }
     .nav__item:first-child {
@@ -1626,7 +1740,27 @@ input {
     margin: 0px 50px;
     margin-bottom: 100px; }
     .clients__card:last-of-type {
-      margin-bottom: 0px; } }
+      margin-bottom: 0px; }
+  .checkout__bg-image {
+    background-position: -40px -1px, -9px -56px; }
+  .checkout__steps {
+    font-size: 15px; }
+    .checkout__steps--1 {
+      max-width: 21rem;
+      left: 277px;
+      top: 58px; }
+    .checkout__steps--2 {
+      left: 351px;
+      top: 179px; }
+    .checkout__steps--3 {
+      left: 376px;
+      top: 344px; }
+    .checkout__steps--4 {
+      max-width: 17rem;
+      left: 310px;
+      top: 493px; }
+  .checkout__form-box {
+    min-width: 31.142rem; } }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1656,7 +1790,29 @@ input {
   .team__about {
     max-width: 47.333rem; }
   .team__col {
-    margin: 32px 20px 0px; } }
+    margin: 32px 20px 0px; }
+  .checkout__bg-image {
+    min-height: 700px;
+    background-position: -200px -1px, -9px -56px; }
+  .checkout__steps {
+    font-size: 15px; }
+    .checkout__steps--1 {
+      max-width: 24rem;
+      left: 135px;
+      top: 58px; }
+    .checkout__steps--2 {
+      left: 206px;
+      top: 179px; }
+    .checkout__steps--3 {
+      left: 230px;
+      top: 344px; }
+    .checkout__steps--4 {
+      max-width: 18rem;
+      left: 169px;
+      top: 493px; }
+  .checkout__form-box {
+    min-height: 450px;
+    min-width: 31.142rem; } }
 
 @media screen and (max-width: 991px) {
   .nav__item {
@@ -1724,7 +1880,9 @@ input {
   .team__people-subtitle {
     font-size: 18px; }
   .team__people-xp-box {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .checkout {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .hero__content {

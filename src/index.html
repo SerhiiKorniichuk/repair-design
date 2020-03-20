@@ -284,6 +284,51 @@
         <!-- container -->
       </section>
       <!-- #### TYPES - END #### -->
+      <section class="section checkout">
+        <div class="checkout__bg-image">
+          <div class="container checkout__container">
+            <div class="checkout__row">
+              <div class="checkout__col-left">
+                <span class="checkout__steps checkout__steps--1">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</span>
+                <span class="checkout__steps checkout__steps--2">Бесплатный замер</span>
+                <span class="checkout__steps checkout__steps--3">Бесплатная консультация</span>
+                <span class="checkout__steps checkout__steps--4">Получите смету расходов и сроки вашего будущего ремонта</span>
+              </div>
+              <!-- COL-LEFT -->
+              <div class="checkout__col-right">
+                <div class="checkout__form-box">
+                  <h3 class="checkout__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                  <form action="send.php" method="POST" class="form checkout__form">
+                    <div class="checkout__group checkout__group--first">
+                      <label for="checkout-user-name" class="label label--light form__label checkout__label">Имя</label>
+                      <input type="text" name="userName" class="input form__input checkout__input" id="checkout-user-name" placeholder="Как вас зовут:">
+                    </div>
+                    <div class="checkout__group checkout__group--second">
+                      <label for="checkout-user-phone" class="label label--light form__label checkout__label">Телефон</label>
+                      <input type="tel" name="userPhone" class="input form__input checkout__input" id="checkout-user-phone" placeholder="Ваш телефон:">
+                    </div>
+                    <div class="checkout__group checkout__group--last">
+                      <label for="checkout-user-email" class="label label--light form__label checkout__label">Email</label>
+                      <input type="email" name="userEmail" class="input form__input checkout__input" id="checkout-user-email" placeholder="Ваш email">
+                    </div>
+                    <div class="policy checkout__policy">
+                      <input type="checkbox" name="policyCheckbox" id="agree" class="policy__checkbox" checked>
+                      <label for="agree" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                    </div>
+                    <button class="button button--primary checkout__button" id="btn-sumbit">Вызвать замерщика</button>
+                  </form>
+                </div>
+                <div class="checkout__saving-box">
+                  <img src="./img/saving-image.svg" alt="saving-image" class="checkout__saving-image">
+                  <span class="checkout__saving-text">Это поможет сэкономить 10 - 20% от стоимости материалов</span>
+                </div>
+              </div>
+              <!-- COL-RIGHT -->
+            </div>
+          </div>
+          <!-- CONTAINER -->
+        </div>
+      </section>
       <!-- #### DESIGN - START #### -->
       <section class="section design">
         <div class="container design__container">

@@ -219,7 +219,8 @@ $(document).ready(function () {
   var formsClass = [
     ".modal__form",
     ".footer__form",
-    ".control__form"
+    ".control__form",
+    ".checkout__form"
   ];
 
   for (var i = 0; i < formsClass.length; i++) {
@@ -298,6 +299,14 @@ $(document).ready(function () {
       $('#btn-button-control').attr('disabled', false);
       }else{
       $('#btn-button-control').attr('disabled', true);
+      }
+    });
+
+    $('#agree-checkout').on('change', function(){
+      if($('#agree-checkout').prop('checked')){
+      $('#btn-sumbit-checkout').attr('disabled', false);
+      }else{
+      $('#btn-sumbit-checkout').attr('disabled', true);
       }
     });
   

@@ -1043,6 +1043,9 @@ input {
     display: flex;
     flex-direction: column;
     color: #fff; }
+  .checkout div.invalid {
+    position: absolute;
+    margin-top: 44px; }
   .checkout__title {
     color: #fff;
     margin: 0 auto;
@@ -1812,7 +1815,10 @@ input {
       top: 493px; }
   .checkout__form-box {
     min-height: 450px;
-    min-width: 31.142rem; } }
+    min-width: 31.142rem; }
+  .checkout div.invalid {
+    position: absolute;
+    margin-top: 39px; } }
 
 @media screen and (max-width: 991px) {
   .nav__item {

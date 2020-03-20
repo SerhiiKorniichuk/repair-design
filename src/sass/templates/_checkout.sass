@@ -1,7 +1,6 @@
 .checkout
   position: relative
   margin-top: 164px
-  // padding-top: 70px
   &__bg-image
     padding: 
     max-width: 1438px
@@ -13,17 +12,13 @@
     max-width: 1256px
     width: 85%
     margin: auto
-
   &__row
     display: flex
     justify-content: space-between
-  &__col-right  
-    // flex-basis: 35%
   &__col-left
     position: relative
     flex-basis: 55%
   &__steps
-    // padding-right: 30px
     display: block 
     position: absolute
     font-family: 'FuturaMediumC', sans-serif
@@ -50,7 +45,6 @@
     padding: 1.74rem 1.75rem 1.928rem 1.75rem
     background: $dark url('../img/modal_bg.svg') no-repeat center / 100%
     background-size: cover
-    // max-width: 95%
     min-width: 36.142rem
     max-height: 36.36rem
   &__form
@@ -58,6 +52,9 @@
     display: flex 
     flex-direction: column
     color: $light
+  & div.invalid
+      position: absolute
+      margin-top: 44px
   &__title
     color: $light
     margin: 0 auto

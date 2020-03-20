@@ -467,7 +467,6 @@ img {
   max-width: 100%; }
 
 .section--dark {
-  background-color: #131313;
   color: #fff; }
 
 .section-title__heading {
@@ -866,7 +865,7 @@ input {
   margin: 0px 10px; }
 
 .control {
-  margin-top: -341px;
+  margin-top: -491px;
   padding-bottom: 46px; }
   .control__section-title {
     color: #fff; }
@@ -1332,6 +1331,21 @@ input {
 
 .client__object-text-days {
   margin-left: 1.071rem; }
+
+.projects-background {
+  background-color: #131313;
+  background-image: url("../img/steps_bg.svg"), url("../img/bg-city-dark.svg");
+  background-repeat: no-repeat, repeat-x;
+  background-position-y: bottom;
+  background-size: cover, auto 600px; }
+
+.control-type-checkout-decor-design-background {
+  padding-top: 150px;
+  background-color: #fff;
+  background-image: url("../img/bg_line2.svg"), url("../img/bg-city.svg");
+  background-repeat: no-repeat, repeat-x;
+  background-position-y: bottom;
+  background-size: cover, auto 600px; }
 
 .team-and-clients {
   padding: 0px 0px 386px 0px;

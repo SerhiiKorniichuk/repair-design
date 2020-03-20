@@ -37,7 +37,7 @@ try {
 
     $mail->send();
     // echo "Письмо отправлено!";
-    header('location: index.html');
+    header('location: thanks.html');
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

@@ -18,6 +18,19 @@ $(document).ready(function () {
   //   modal.removeClass('modal--visible'); 
   // });
 
+  var ajaxSuccessModal = $('.ajax-success'),
+      ajaxSuccessModalBtn = $('[data-toggle="ajax-success-close"]'),
+      ajaxSuccessModalcloseBtn = $('.ajax-success__close');
+
+      ajaxSuccessModalcloseBtn.on('click', function () {
+        ajaxSuccessModal.removeClass('ajax-success--visible');
+      });
+      $(document).on('keydown', function (event) {
+        if (event.code == 'Escape') {
+          ajaxSuccessModal.removeClass('ajax-success--visible');
+        }
+      });
+
 
 
 
@@ -235,7 +248,19 @@ $(document).ready(function () {
           required: "Заполните поле",
           email: "Введите корректный email: name@domain.com"
         }
-      }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            $(form)[0].reset();
+            modal.removeClass('modal--visible');
+            ajaxSuccessModal.addClass('ajax-success--visible');
+          }
+        });
+      },
     });
 
     $('[type=tel]').mask('+7 (000) 000-00-00');

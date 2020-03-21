@@ -85,8 +85,8 @@ $(document).ready(function () {
   var prevSteps = $('.steps__button-prev');
   var bulletsSteps = $('.swiper-pagination.steps__pagination');
 
-  nextSteps.css('left', prevSteps.width() + 17 + bulletsSteps.width() + 17);
-  bulletsSteps.css('left', prevSteps.width() + 20);
+  nextSteps.css('left', prevSteps.width() + 22 + bulletsSteps.width() + 23);
+  bulletsSteps.css('left', prevSteps.width() + 22);
 
 
   var slideNum = 1,

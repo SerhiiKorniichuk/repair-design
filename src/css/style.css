@@ -528,8 +528,8 @@ img {
     font-family: FuturaBookC, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.07rem;
-    line-height: 173%;
+    font-size: 1.0715rem;
+    line-height: 169.8%;
     color: #959595;
     list-style-type: none; }
   .card__item--dots {
@@ -1133,8 +1133,8 @@ input {
     background: rgba(19, 19, 19, 0.3); }
 
 .steps {
-  padding-top: 30.15rem;
-  padding-bottom: 35.800rem;
+  padding-top: 422.1px;
+  padding-bottom: 501.2px;
   margin-top: -470px;
   background: #131313 url("../img/steps_bg.svg") no-repeat center;
   background-size: cover; }
@@ -1144,7 +1144,7 @@ input {
   .steps__row-left {
     max-width: 30%; }
   .steps__row-right {
-    max-width: 63%;
+    max-width: 61.9%;
     position: relative;
     display: flex; }
   .steps__description {
@@ -1170,7 +1170,7 @@ input {
       .steps__heading--block::after {
         content: '';
         position: absolute;
-        margin-left: 212px;
+        margin-left: 15.143rem;
         width: 92px;
         height: 1px;
         background-color: #E3B873; }
@@ -1204,6 +1204,8 @@ input {
     font-size: 1.071rem;
     line-height: 25px;
     max-width: 24.07rem; }
+  .steps .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 8px; }
 
 .steps-slide__title {
   margin-top: 19px;
@@ -1248,12 +1250,18 @@ input {
     .pagination-steps__block--1 {
       margin-left: 0;
       margin-bottom: 40px; }
+    .pagination-steps__block--2 {
+      margin-left: 25px; }
+    .pagination-steps__block--3 {
+      min-width: 13%; }
     .pagination-steps__block--4 {
       margin-left: 0;
       margin-bottom: 0; }
     .pagination-steps__block--5 {
+      margin-left: 25px;
       margin-bottom: 44px; }
     .pagination-steps__block--6 {
+      min-width: 13%;
       margin-bottom: 44px; }
     .pagination-steps__block--active {
       color: #fff; }
@@ -1829,7 +1837,11 @@ input {
     min-width: 31.142rem; }
   .checkout div.invalid {
     position: absolute;
-    margin-top: 39px; } }
+    margin-top: 39px; }
+  .steps .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 4px; }
+  .steps .swiper-button-next {
+    margin-left: -49px; } }
 
 @media screen and (max-width: 991px) {
   .nav__item {
@@ -1885,6 +1897,12 @@ input {
     color: #fff; }
   .control__policy {
     margin-top: 0px; }
+  .team__wrap {
+    margin-top: 100px; }
+  .team__heading {
+    color: #131313; }
+  .team__subtitle {
+    color: #131313; }
   .team__row {
     flex-direction: column;
     align-items: center; }
@@ -1899,6 +1917,8 @@ input {
   .team__people-xp-box {
     font-size: 13px; }
   .checkout {
+    display: none; }
+  .steps {
     display: none; } }
 
 @media screen and (max-width: 768px) {

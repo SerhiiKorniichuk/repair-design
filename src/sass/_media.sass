@@ -119,6 +119,11 @@
     & div.invalid
       position: absolute
       margin-top: 39px
+  .steps
+    & .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+      margin: 0px 4px
+    & .swiper-button-next
+      margin-left: -49px
 
 @media screen and ( max-width: 991px )
   .nav
@@ -185,6 +190,12 @@
       margin-top: 0px
 
   .team
+    &__wrap
+      margin-top: 100px
+    &__heading
+      color: $dark
+    &__subtitle
+      color: $dark
     &__row
       flex-direction: column
       align-items: center
@@ -200,6 +211,9 @@
       font-size: 13px
 
   .checkout
+    display: none
+  
+  .steps
     display: none
 
 @media screen and ( max-width: 768px )

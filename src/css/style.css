@@ -501,14 +501,20 @@ img {
   .card img {
     display: block;
     width: 100%; }
+  .card__image {
+    max-height: 421px; }
   .card__text {
     position: relative;
     margin: 0 auto;
     max-width: 23.571rem;
-    bottom: 8.8rem;
-    padding: 1.65rem 2.428rem;
+    bottom: 9.14rem;
+    padding: 1.67rem 2.428rem 1.65rem;
     background-color: #fff;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+    .card__text--2 {
+      padding-left: 2.2rem; }
+    .card__text--3 {
+      padding-left: 2.2rem; }
   .card__title {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -517,18 +523,21 @@ img {
     line-height: 1.78rem;
     margin: 0 0 0.48rem 0; }
   .card__list {
-    margin: 0 0 2.8rem 1.2rem;
+    margin: -1px 0 2.8rem 0rem;
     padding: 0;
     font-family: FuturaBookC, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.07rem;
-    line-height: 1.85rem;
-    color: #959595; }
+    line-height: 173%;
+    color: #959595;
+    list-style-type: none; }
+  .card__item--dots {
+    margin-right: 3px; }
   .card__price-tag {
     position: absolute;
     left: 0;
-    bottom: -1.7rem;
+    bottom: -1.8rem;
     min-width: 16.285rem;
     font-family: Yeseva One, sans-serif;
     font-style: normal;
@@ -746,7 +755,7 @@ input {
   margin-bottom: 45px; }
 
 .projects {
-  padding: 128px 0px 431px 0px; }
+  padding: 128px 0px 352px 0px; }
   .projects__row {
     display: flex;
     align-items: flex-start;
@@ -879,7 +888,7 @@ input {
   .control__video {
     position: relative;
     display: flex;
-    max-width: 58.357rem;
+    max-width: 58.4rem;
     min-height: 31rem;
     margin: 0 auto;
     margin-top: 2.229rem;
@@ -952,7 +961,7 @@ input {
     flex-direction: column;
     margin-left: 9px; }
   .control__form-button {
-    padding: 1.1rem 4.2rem;
+    padding: 1.1rem 4.3rem 1.1rem 4.3rem;
     max-height: 51px;
     color: #fff;
     border: 0.07rem solid #E3B873;
@@ -970,12 +979,15 @@ input {
   .control__policy {
     display: flex;
     margin: 0 auto;
+    padding-right: 80px;
     margin-top: 32px;
     align-items: center;
     font-style: normal;
     font-weight: normal;
     font-size: 1.142rem;
     line-height: 22px; }
+  .control__label {
+    font-size: 1.143rem; }
 
 .video__play-button {
   max-width: 85px;
@@ -984,7 +996,7 @@ input {
   margin: auto; }
 
 .types__section {
-  margin: 7.142rem 0rem 2.2rem 0rem; }
+  margin: 7.3rem 0rem 2.2rem 0rem; }
 
 .types__price-tag {
   text-align: center;
@@ -992,7 +1004,7 @@ input {
 
 .checkout {
   position: relative;
-  margin-top: 164px; }
+  margin-top: 160px; }
   .checkout__bg-image {
     max-width: 1438px;
     margin: 0 auto;

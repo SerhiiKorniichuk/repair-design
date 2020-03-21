@@ -657,7 +657,7 @@ input {
     height: 100%;
     background: rgba(19, 19, 19, 0.7); }
   .hero__content {
-    margin-left: 2.4rem;
+    padding-left: 70px;
     position: relative;
     max-width: 47.85rem; }
   .hero__instagram {
@@ -1924,6 +1924,7 @@ input {
 
 @media screen and (max-width: 768px) {
   .hero__content {
+    padding-left: 0px;
     margin-left: 0rem; }
   .hero__instagram {
     display: none; }

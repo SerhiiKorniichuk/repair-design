@@ -996,7 +996,7 @@ input {
   .checkout__bg-image {
     max-width: 1438px;
     margin: 0 auto;
-    background-image: url("../img/checkout-circles.png"), url("../img/checkout-bg.png");
+    background-image: url("../img/checkout-circles.png"), url("../img/checkout-bg-custom.png");
     background-repeat: no-repeat, no-repeat;
     background-position: -8px -1px, -9px -56px; }
   .checkout__container {

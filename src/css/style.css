@@ -1292,7 +1292,7 @@ input {
   .team__section {
     margin-bottom: 1.28rem; }
   .team__wrap {
-    margin-top: -409px; }
+    margin-top: -407px; }
   .team__heading {
     color: #fff;
     margin-top: 0; }
@@ -1305,9 +1305,10 @@ input {
       line-height: 27px; }
   .team__row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; }
   .team__col {
-    margin: 32px 52px 0px; }
+    margin: 32px 53px 50px; }
   .team__card {
     position: relative; }
   .team__icon {
@@ -1324,12 +1325,18 @@ input {
     .team__icon img {
       display: block; }
   .team__image {
-    max-width: 19.36rem;
-    max-height: 25.473rem; }
+    max-height: 357px;
+    min-width: 272.24px;
+    max-width: 272.24px; }
+    .team__image img {
+      height: 100%;
+      max-height: 357px;
+      -o-object-fit: cover;
+      object-fit: cover; }
   .team__people-info {
     position: relative;
     padding-top: 20px;
-    max-width: 86%;
+    max-width: 85.5%;
     margin: 0 auto;
     margin-top: -79px;
     text-align: center;
@@ -1350,7 +1357,7 @@ input {
   .team__people-xp-box {
     max-width: 100%;
     margin-top: 20px;
-    padding: 13px 0px 11px;
+    padding: 12px 0px 12px;
     background-color: #E3B873;
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -1365,7 +1372,7 @@ input {
       content: '';
       display: block;
       margin: auto;
-      margin-top: 53px;
+      margin-top: 3px;
       margin-bottom: 10px;
       width: 55px;
       height: 2px;
@@ -1807,12 +1814,6 @@ input {
       max-width: 510px; }
   .projects__swiper-text {
     width: 37%; }
-  .team__people-info {
-    max-width: 90%; }
-  .team__about {
-    max-width: 47.333rem; }
-  .team__col {
-    margin: 32px 20px 0px; }
   .checkout__bg-image {
     min-height: 700px;
     background-position: -200px -1px, -9px -56px; }
@@ -1964,6 +1965,8 @@ input {
     padding: 0px 0px 210px 0px;
     background-color: #131313;
     background-image: none; }
+  .team__heading {
+    color: #fff; }
   .team__wrap {
     margin-top: 0px; }
   .team__section {
@@ -2175,26 +2178,26 @@ input {
     max-width: 37px;
     max-height: 37px; }
   .team {
-    margin-bottom: 27px; }
+    padding-bottom: 62px;
+    margin-bottom: 0px; }
     .team__subtitle {
       max-width: 375px; }
     .team__row {
       display: flex;
       align-items: center; }
+    .team__card {
+      min-width: 305px; }
     .team__col {
-      margin: 32px 0px 0px;
-      margin-top: 121px; }
+      margin: 32px -32px 0px 0px;
+      margin-top: 72px; }
       .team__col:first-of-type {
-        margin-top: 43px; }
+        margin-top: 3px; }
     .team__image {
-      max-width: 304px; }
+      max-width: 305px; }
       .team__image img {
-        width: 100%;
-        max-height: 357px;
-        -o-object-fit: cover;
-        object-fit: cover; }
+        width: 100%; }
     .team__people-info {
-      top: 50px;
+      margin-top: -81px;
       max-width: 77%; } }
 
 .animkey {

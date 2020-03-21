@@ -85,13 +85,6 @@
         max-width: 510px
     &__swiper-text
       width: 37%
-  .team
-    &__people-info
-      max-width: 90%
-    &__about
-      max-width: 47.333rem
-    &__col
-      margin: 32px 20px 0px
 
   .checkout
     &__bg-image
@@ -126,6 +119,8 @@
       margin-left: -49px
 
 @media screen and ( max-width: 991px )
+
+  
   .nav
     &__item
      display: none
@@ -269,6 +264,8 @@
     background-image: none
   
   .team
+    &__heading
+      color: $light
     &__wrap
       margin-top: 0px
     &__section
@@ -325,11 +322,9 @@
   .hero
     &__text
       max-width: 26.5rem
-
   .types
     &__section
         margin: 6.9rem 0rem 3.25rem 0rem
-
   .section
     &-title
       &__heading
@@ -341,13 +336,10 @@
     &__text
       &--white
         color: $light
-
-
   .row
     display: block
     max-width: 392px
     width: 100%
-
   .card
     margin-bottom: -6rem 
     &__text
@@ -361,7 +353,6 @@
       min-width: 15.7rem
     &__list
       margin: 0 0 2.8rem 1.3rem
-
   .page-subtitle
     max-width: 308px
     margin-bottom: 38px
@@ -370,16 +361,13 @@
       line-height: 137%
       font-style: normal
       font-weight: normal
-
   .design
     background-color: $dark
-
   .swiper-text
     &__heading
       font-size: 14px
     &__description
       font-size: 14px
-
   .projects
     &__description
       margin-top: 22px
@@ -390,10 +378,8 @@
     &__swiper-container
       &--image
         max-height: 100%
-
     &__nav
       margin-bottom: 2px
-
   .control
     background-color: $dark
     color: $light
@@ -435,9 +421,6 @@
       margin-bottom: -26px 
       margin-top: 62px
       min-width: 100%
-      
-    
-
   .policy
     &__label
       &::before
@@ -445,7 +428,6 @@
         margin-left: -1px
         width: 1.5rem
         height: 1.5rem
-
   .footer
     &__group
       flex-basis: 100%
@@ -473,7 +455,6 @@
       margin-top: 5.56rem
       min-width: 100%
       padding: 1rem 4.2rem 1rem
-
 
 @media screen and ( max-width: 376px )
   .projects
@@ -516,25 +497,25 @@
       max-height: 37px
 
   .team
-    margin-bottom: 27px
+    padding-bottom: 62px
+    margin-bottom: 0px
     &__subtitle
       max-width: 375px
     &__row
       display: flex
       align-items: center
+    &__card
+      min-width: 305px
     &__col
-      margin: 32px 0px 0px
-      margin-top: 121px
-      // margin-left: 25px
+      margin: 32px -32px 0px 0px
+      margin-top: 72px
       &:first-of-type
-        margin-top: 43px
+        margin-top: 3px
     &__image
-      max-width: 304px
+      max-width: 305px
       & img
         width: 100%
-        max-height: 357px
-        object-fit: cover
     &__people-info
-      top: 50px
+      margin-top: -81px
       max-width: 77%
     

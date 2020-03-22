@@ -2,7 +2,6 @@
   position: relative
   background: $dark url(../img/decor-bg.png) no-repeat center / cover
   color: $light
-  min-height: 864px
   &::before
     content: ''
     position: absolute
@@ -15,15 +14,21 @@
     position: relative
     display: flex
     justify-content: space-between
+    align-items: center
   &__col
     &--left
       flex-basis: 37%
     &--right
+      // position: absolute
+      left: 39.3%
+      // top: 0
       flex-basis: 63%
   &__section-title
     max-width: 29.36rem
   &__heading
     margin: 0
+    margin-bottom: 43px
+    // padding-top: 135px
     font-family: 'Yeseva One', sursive
     font-style: normal
     font-weight: normal
@@ -33,15 +38,18 @@
     color: $primary
   &__list
     padding: 0
+    // padding-bottom: 96px
     margin: 0
+    letter-spacing: -1px
     list-style: none
     font-weight: 500
     font-size: 20px
   &__item
-    margin-bottom: 18px
+    margin-bottom: 1.571rem
     color: $light
     cursor: pointer
     transition: color 0.2s
+    font-size: 1.714rem
     &:last-of-type
       margin-bottom: 0px
     &--active
@@ -49,7 +57,7 @@
     &::before
       content: ''
       position: absolute
-      margin-top: 23px
+      margin-top: 26px
       width: 0px
       height: 1px
       background-color: $primary
@@ -59,13 +67,11 @@
       &::before
         width: 146px
   &__img-wrapper
-    position: absolute
-    right: 0
-    top: 0
-    display: flex
+    display: none
     justify-content: flex-end
     opacity: 0
     &--active
+      display: flex
       opacity: 1
   &__img-col
     display: flex
@@ -75,11 +81,12 @@
       margin-left: 0px
     &--1
       margin-top: -41px
+      margin-bottom: 39.1px
+    &--2
+      margin-bottom: -41.2px
     &--3
-      margin-top: -106px
+      margin-top: -110px
+      margin-bottom: 37px
     & img
       width: 100%
       height: auto
-      margin-bottom: 40px
-      &:last-of-type
-        margin-bottom: 0px

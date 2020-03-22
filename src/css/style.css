@@ -1004,8 +1004,7 @@ input {
 
 .checkout {
   position: relative;
-  margin-top: 160px;
-  padding-bottom: 150px; }
+  margin-top: 160px; }
   .checkout__bg-image {
     max-width: 1438px;
     margin: 0 auto;
@@ -1110,6 +1109,8 @@ input {
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15); }
 
 .decor {
+  margin-top: 250px;
+  margin-bottom: 200px;
   position: relative;
   background: #131313 url(../img/decor-bg.png) no-repeat center/cover;
   color: #fff; }
@@ -1196,6 +1197,30 @@ input {
     .decor__img-col img {
       width: 100%;
       height: auto; }
+  .decor__slider {
+    display: none;
+    padding: 70px 0px 100px;
+    position: relative;
+    margin: auto;
+    width: 75%; }
+    .decor__slider img {
+      width: 100%;
+      height: auto; }
+  .decor__slider-section-title {
+    text-align: center;
+    margin: 0 auto; }
+  .decor__swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 10px;
+    background: url("../img/decor-slider-button-prev.svg") no-repeat center; }
+  .decor__swiper-button-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    right: 10px;
+    background: url("../img/decor-slider-button-next.svg") no-repeat center; }
 
 .design__section {
   margin: 7.142rem 0rem 1.28rem 0rem; }
@@ -1939,7 +1964,9 @@ input {
   .steps .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0px 4px; }
   .steps .swiper-button-next {
-    margin-left: -49px; } }
+    margin-left: -49px; }
+  .decor {
+    margin-top: 100px; } }
 
 @media screen and (max-width: 991px) {
   .nav__item {
@@ -2020,6 +2047,10 @@ input {
     display: none; }
   .steps {
     display: none; }
+  .decor__row {
+    display: none; }
+  .decor__slider {
+    display: block; }
   .team__col {
     margin: 33px 0px 0px 0px; }
     .team__col:first-of-type {
@@ -2036,7 +2067,15 @@ input {
   .hero__scroll-down {
     display: none; }
   .go-up {
-    display: none; } }
+    display: none; }
+  .decor__slider {
+    width: 90%; }
+  .decor__swiper-button-prev {
+    width: 40px;
+    height: 40px; }
+  .decor__swiper-button-next {
+    width: 40px;
+    height: 40px; } }
 
 @media screen and (max-width: 576px) {
   .hero__text {
@@ -2114,6 +2153,28 @@ input {
       min-width: 100%; }
   .steps {
     display: none; }
+  .types {
+    padding-bottom: 250px; }
+  .decor {
+    padding-top: 1px;
+    background: #131313;
+    margin-top: 0px;
+    margin-bottom: 0; }
+    .decor::before {
+      display: none; }
+    .decor__slider {
+      margin-top: -255px;
+      padding-top: 0;
+      padding-bottom: 0; }
+    .decor__section-title {
+      max-width: 95; }
+  .design {
+    padding-top: 1px;
+    background: #131313; }
+    .design__title-heading {
+      color: #fff; }
+    .design__subtitle {
+      color: #fff; }
   .team-and-clients {
     padding: 0px 0px 210px 0px;
     background-color: #131313;
@@ -2179,8 +2240,6 @@ input {
     margin-bottom: 33px; }
   .hero__text {
     max-width: 26.5rem; }
-  .types__section {
-    margin: 6.9rem 0rem 3.25rem 0rem; }
   .section-title__heading {
     font-size: 22px; }
     .section-title__heading--white {
@@ -2242,6 +2301,19 @@ input {
       .control__description::before {
         margin-top: 29px;
         margin-bottom: 15px; }
+  .types {
+    padding-bottom: 205px; }
+    .types__section {
+      margin: 6.9rem 0rem 3.25rem 0rem; }
+  .decor__section-title {
+    max-width: 100%; }
+  .decor__slider-heading {
+    font-size: 22px;
+    line-height: 138.6%;
+    margin-bottom: 32px; }
+  .decor__slider {
+    margin-top: -213px;
+    width: 100%; }
   .policy__label::before {
     margin-top: 2px;
     margin-left: -1px;

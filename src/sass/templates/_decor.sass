@@ -1,4 +1,6 @@
 .decor
+  margin-top: 250px
+  margin-bottom: 200px
   position: relative
   background: $dark url(../img/decor-bg.png) no-repeat center / cover
   color: $light
@@ -19,16 +21,13 @@
     &--left
       flex-basis: 37%
     &--right
-      // position: absolute
       left: 39.3%
-      // top: 0
       flex-basis: 63%
   &__section-title
     max-width: 29.36rem
   &__heading
     margin: 0
     margin-bottom: 43px
-    // padding-top: 135px
     font-family: 'Yeseva One', sursive
     font-style: normal
     font-weight: normal
@@ -38,7 +37,6 @@
     color: $primary
   &__list
     padding: 0
-    // padding-bottom: 96px
     margin: 0
     letter-spacing: -1px
     list-style: none
@@ -90,3 +88,30 @@
     & img
       width: 100%
       height: auto
+  
+
+  &__slider
+    display: none
+    padding: 70px 0px 100px
+    position: relative
+    margin: auto
+    width: 75%
+    & img
+      width: 100%
+      height: auto
+  &__slider-section-title
+    text-align: center
+    margin: 0 auto
+  &__swiper-button-prev
+    width: 50px
+    height: 50px
+    top: 50%
+    left: 10px
+    background: url('../img/decor-slider-button-prev.svg') no-repeat center
+  &__swiper-button-next
+    width: 50px
+    height: 50px
+    top: 50%
+    right: 10px
+    background: url('../img/decor-slider-button-next.svg') no-repeat center
+    

@@ -120,24 +120,22 @@
       margin: 0px 4px
     & .swiper-button-next
       margin-left: -49px
+  .decor
+    margin-top: 100px
 
 @media screen and ( max-width: 991px )
   .nav
     &__item
-     display: none
-  
+     display: none 
   .row
     display: block
     max-width: 392px
     width: 98%
-    margin: 0 auto
-  
+    margin: 0 auto 
   .card
     margin-bottom: 0rem
-
   .page-subtitle
     max-width: 550px
-
   .projects
     padding: 0px 0px 410px 0px
     &__row
@@ -206,13 +204,16 @@
       font-size: 18px
     &__people-xp-box
       font-size: 13px
-
   .checkout
     display: none
-  
   .steps
     display: none
-
+  .decor
+    &__row
+      display: none
+    &__slider
+      display: block
+      
   .team
     &__col
       margin: 33px 0px 0px 0px
@@ -232,6 +233,15 @@
   .go-up
     display: none
 
+  .decor
+    &__slider
+      width: 90%
+    &__swiper-button-prev
+      width: 40px
+      height: 40px
+    &__swiper-button-next
+      width: 40px
+      height: 40px
 @media screen and ( max-width: 576px )
   .hero
     &__text
@@ -303,6 +313,28 @@
       min-width: 100%
   .steps
     display: none
+  .types
+    padding-bottom: 250px
+  .decor
+    padding-top: 1px
+    background: $dark
+    margin-top: 0px
+    margin-bottom: 0
+    &::before
+      display: none
+    &__slider
+      margin-top: -255px
+      padding-top: 0
+      padding-bottom: 0
+    &__section-title
+      max-width: 95
+  .design
+    padding-top: 1px
+    background: $dark
+    &__title-heading
+      color: $light
+    &__subtitle
+      color: $light
   .team-and-clients
     padding: 0px 0px 210px 0px
     background-color: $dark
@@ -371,9 +403,6 @@
   .hero
     &__text
       max-width: 26.5rem
-  .types
-    &__section
-        margin: 6.9rem 0rem 3.25rem 0rem
   .section
     &-title
       &__heading
@@ -442,6 +471,22 @@
       &::before
         margin-top: 29px
         margin-bottom: 15px
+  .types
+    padding-bottom: 205px
+    &__section
+        margin: 6.9rem 0rem 3.25rem 0rem
+
+  .decor
+    &__section-title
+      max-width: 100%
+      // font-size: 22px
+    &__slider-heading
+      font-size: 22px
+      line-height: 138.6%
+      margin-bottom: 32px
+    &__slider
+      margin-top: -213px
+      width: 100%
   .policy
     &__label
       &::before

@@ -119,8 +119,6 @@
       margin-left: -49px
 
 @media screen and ( max-width: 991px )
-
-  
   .nav
     &__item
      display: none
@@ -211,6 +209,13 @@
   .steps
     display: none
 
+  .team
+    &__col
+      margin: 33px 0px 0px 0px
+      &:first-of-type
+        margin-top: 0px
+      &:last-of-type
+        margin-bottom: 50px
 @media screen and ( max-width: 768px )
   .hero
     &__content
@@ -306,6 +311,19 @@
     &__icon a
       width: 40px
       height: 40px
+  
+  .team
+    padding-top: 60px
+    & .page-subtitle
+      max-width: 100%
+    &__col
+      &:first-of-type
+        margin-top: 5px
+      &:last-of-type
+        margin-bottom: 0px
+    &__people-info
+      // padding-right: 10px
+      max-width: 80%
       
 
 @media screen and ( max-width: 500px )
@@ -498,25 +516,12 @@
       max-height: 37px
 
   .team
-    padding-bottom: 62px
-    margin-bottom: 0px
-    &__subtitle
-      max-width: 375px
     &__row
       display: flex
-      align-items: center
-    &__card
-      min-width: 305px
+      flex-wrap: wrap
+      justify-content: center
     &__col
-      margin: 32px -32px 0px 0px
-      margin-top: 72px
-      &:first-of-type
-        margin-top: 3px
-    &__image
-      max-width: 305px
-      & img
-        width: 100%
-    &__people-info
-      margin-top: -81px
-      max-width: 77%
-    
+      padding-left: 35px
+    & img
+      max-width: 304px
+      // max-height: 357px

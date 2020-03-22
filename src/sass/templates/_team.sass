@@ -19,9 +19,11 @@
     flex-wrap: wrap
     justify-content: center
   &__col
-    margin: 32px 53px 50px
+    margin: 33px 52px 50px 52px
   &__card
     position: relative
+    display: flex
+    flex-direction: column
   &__icon
     display: flex
     justify-content: center
@@ -36,21 +38,24 @@
     & img
       display: block
   &__image
-    max-height: 357px
-    min-width: 272.24px
-    max-width: 272.24px
+    // padding-top: 35px
+    &--main
+      left: 0
+      top: 0
+      width: 100%
+      max-width: 272px
+      height: auto
     & img
-      height: 100%
       max-height: 357px
-      object-fit: cover
   &__people-info
     position: relative
+    margin-left: 70px
     padding-top: 20px
-    max-width: 85.5%
+    max-width: 86%
     margin: 0 auto
-    margin-top: -79px
+    margin-top: -84px
     text-align: center
-    background-color: $light
+    background-color: #fff
   &__people-title
     display: block
     font-family: Yeseva One

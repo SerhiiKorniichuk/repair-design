@@ -1109,8 +1109,8 @@ input {
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15); }
 
 .decor {
-  margin-top: 250px;
-  margin-bottom: 200px;
+  margin-top: 240px;
+  margin-bottom: 155px;
   position: relative;
   background: #131313 url(../img/decor-bg.png) no-repeat center/cover;
   color: #fff; }

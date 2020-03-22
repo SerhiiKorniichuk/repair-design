@@ -1757,10 +1757,12 @@ input {
       margin-left: 0rem; }
   .contacts__phone {
     margin-right: 2rem; }
-  .projects__swiper-container--text {
-    margin-top: -260px; }
-  .projects__swiper-container--image {
-    max-width: 570px; }
+  .projects {
+    padding: 128px 0px 400px 0px; }
+    .projects__swiper-container--text {
+      margin-top: -260px; }
+    .projects__swiper-container--image {
+      max-width: 570px; }
   .clients__row {
     display: flex;
     flex-wrap: wrap;
@@ -1858,31 +1860,33 @@ input {
     margin-bottom: 0rem; }
   .page-subtitle {
     max-width: 550px; }
-  .projects__row {
-    max-width: 80%;
-    margin: 0 auto; }
-  .projects__section-title {
-    text-align: center;
-    min-width: 100%;
-    align-items: center; }
-  .projects__description {
-    max-width: 315px;
-    margin-bottom: 36px; }
-  .projects__title-word {
-    justify-content: center; }
-    .projects__title-word::after {
-      display: none; }
-  .projects__swiper-slider {
-    display: block; }
-  .projects__swiper-text {
-    width: 50%;
-    margin: 0; }
-  .projects__swiper-container--image {
-    min-width: 100%; }
-  .projects__swiper-container--text {
-    max-width: 100%;
-    align-self: start;
-    margin: 0; }
+  .projects {
+    padding: 0px 0px 410px 0px; }
+    .projects__row {
+      max-width: 80%;
+      margin: 0 auto; }
+    .projects__section-title {
+      text-align: center;
+      min-width: 100%;
+      align-items: center; }
+    .projects__description {
+      max-width: 80%;
+      margin-bottom: 36px; }
+    .projects__title-word {
+      justify-content: center; }
+      .projects__title-word::after {
+        display: none; }
+    .projects__swiper-slider {
+      display: block; }
+    .projects__swiper-text {
+      width: 50%;
+      margin: 0; }
+    .projects__swiper-container--image {
+      min-width: 100%; }
+    .projects__swiper-container--text {
+      max-width: 100%;
+      align-self: start;
+      margin: 0; }
   .control__form {
     display: flex;
     flex-direction: column;
@@ -1957,35 +1961,92 @@ input {
       display: none; }
   .contacts__button {
     display: none; }
-  .projects__row {
-    max-width: 100%; }
-  .projects__description {
-    font-size: 14px;
-    max-width: 305px;
-    margin-top: 25px;
-    margin-bottom: 39px; }
-  .projects__swiper-slide {
-    margin-bottom: 38px; }
-  .projects__swiper-container--image {
-    max-height: 100%; }
+  .projects {
+    padding: 0px 0px 70px 0px; }
+    .projects__row {
+      max-width: 100%; }
+    .projects__description {
+      font-size: 14px;
+      margin-top: 25px;
+      margin-bottom: 39px; }
+    .projects__swiper-slide {
+      margin-bottom: 38px; }
+    .projects__swiper-container--image {
+      max-height: 100%; }
+  .projects-background {
+    background: #131313; }
+  .control-type-checkout-decor-design-background {
+    background: #fff;
+    padding-top: 0px; }
+  .control {
+    background-color: #131313;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 0px; }
+    .control__form {
+      margin-top: 25px; }
+    .control__email-form {
+      margin-top: 59px;
+      margin-bottom: 25px;
+      font-size: 16px; }
+    .control__label {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.5); }
+    .control__input {
+      padding-top: 2px;
+      font-size: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+      .control__input::-webkit-input-placeholder {
+        color: #fff; }
+      .control__input::-moz-placeholder {
+        color: #fff; }
+      .control__input:-ms-input-placeholder {
+        color: #fff; }
+      .control__input::-ms-input-placeholder {
+        color: #fff; }
+      .control__input::placeholder {
+        color: #fff; }
+    .control__input-email {
+      padding-bottom: 5px; }
+    .control__policy {
+      margin: 0;
+      margin-left: -13px;
+      padding-right: 0px; }
+    .control__form-button {
+      padding-top: 17px;
+      padding-bottom: 16px;
+      margin-bottom: -26px;
+      margin-top: 62px;
+      min-width: 100%; }
   .steps {
     display: none; }
   .team-and-clients {
     padding: 0px 0px 210px 0px;
     background-color: #131313;
     background-image: none; }
-  .team__heading {
-    color: #fff; }
-  .team__wrap {
-    margin-top: 0px; }
-  .team__section {
-    color: #fff; }
-  .team__subtitle {
-    color: #fff; }
-  .team__about-text {
-    color: #fff; }
-  .team__about {
-    display: none; }
+  .team {
+    padding-top: 60px; }
+    .team .page-subtitle {
+      max-width: 100%; }
+    .team__heading {
+      color: #fff; }
+    .team__wrap {
+      margin-top: 0px; }
+    .team__section {
+      color: #fff; }
+    .team__subtitle {
+      color: #fff; }
+    .team__about-text {
+      color: #fff; }
+    .team__about {
+      display: none; }
+    .team__col:first-of-type {
+      margin-top: 5px; }
+    .team__col:last-of-type {
+      margin-bottom: 0px; }
+    .team__people-info {
+      max-width: 80%; }
   .clients {
     display: none; }
   .footer__content {
@@ -2009,17 +2070,7 @@ input {
     margin-bottom: -20px; }
   .footer__icon a {
     width: 40px;
-    height: 40px; }
-  .team {
-    padding-top: 60px; }
-    .team .page-subtitle {
-      max-width: 100%; }
-    .team__col:first-of-type {
-      margin-top: 5px; }
-    .team__col:last-of-type {
-      margin-bottom: 0px; }
-    .team__people-info {
-      max-width: 80%; } }
+    height: 40px; } }
 
 @media screen and (max-width: 500px) {
   .container {
@@ -2049,18 +2100,18 @@ input {
     max-width: 392px;
     width: 100%; }
   .card {
-    margin-bottom: -6rem; }
+    margin-bottom: -5.4rem; }
     .card__text {
       margin: 0;
       bottom: 11.55rem;
       max-width: 22.5rem; }
     .card__price-tag {
       text-align: center;
-      bottom: -0.65rem;
+      bottom: -1.25rem;
       padding: 0.8rem 1rem;
       min-width: 15.7rem; }
     .card__list {
-      margin: 0 0 2.8rem 1.3rem; }
+      margin: 0 0 2.8rem 0rem; }
   .page-subtitle {
     max-width: 308px;
     margin-bottom: 38px; }
@@ -2086,8 +2137,6 @@ input {
   .projects__nav {
     margin-bottom: 2px; }
   .control {
-    background-color: #131313;
-    color: #fff;
     padding-bottom: 0px; }
     .control__video {
       margin-top: 40px;
@@ -2100,40 +2149,6 @@ input {
       .control__description::before {
         margin-top: 29px;
         margin-bottom: 15px; }
-    .control__form {
-      margin-top: 25px; }
-    .control__email-form {
-      margin-top: 59px;
-      margin-bottom: 25px;
-      font-size: 16px; }
-    .control__label {
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.5); }
-    .control__input {
-      padding-top: 2px;
-      font-size: 18px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
-      .control__input::-webkit-input-placeholder {
-        color: #fff; }
-      .control__input::-moz-placeholder {
-        color: #fff; }
-      .control__input:-ms-input-placeholder {
-        color: #fff; }
-      .control__input::-ms-input-placeholder {
-        color: #fff; }
-      .control__input::placeholder {
-        color: #fff; }
-    .control__input-email {
-      padding-bottom: 5px; }
-    .control__policy {
-      margin: 0;
-      margin-left: -13px; }
-    .control__form-button {
-      padding-top: 17px;
-      padding-bottom: 16px;
-      margin-bottom: -26px;
-      margin-top: 62px;
-      min-width: 100%; }
   .policy__label::before {
     margin-top: 2px;
     margin-left: -1px;
@@ -2166,7 +2181,12 @@ input {
     padding: 1rem 4.2rem 1rem; } }
 
 @media screen and (max-width: 376px) {
+  .hero {
+    padding-bottom: 80px; }
+    .hero button:last-of-type {
+      margin-top: 26px; }
   .projects__description {
+    max-width: 305px;
     margin-top: 25px;
     margin-bottom: 41px;
     line-height: 163.84%; }
@@ -2180,15 +2200,6 @@ input {
     margin-top: -2px;
     margin-bottom: 32px;
     max-height: 202px; }
-  .projects__swiper-button-prev {
-    margin-left: 50%;
-    transform: translateX(-248%); }
-  .projects__swiper-button-next {
-    margin-left: 50%;
-    transform: translateX(-248%); }
-  .projects__swiper-pagination {
-    margin-left: 50%;
-    transform: translateX(-120%); }
   .swiper-text__heading {
     margin-bottom: 9px; }
   .control__description {
@@ -2196,6 +2207,8 @@ input {
   .video__play-button {
     max-width: 37px;
     max-height: 37px; }
+  .types .card__text {
+    bottom: 11.40rem; }
   .team__row {
     display: flex;
     flex-wrap: wrap;

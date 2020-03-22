@@ -12,13 +12,14 @@
   .contacts
     &__phone
       margin-right: 2rem
-  
   .projects
+    padding: 128px 0px 400px 0px
     &__swiper-container
       &--text
         margin-top: -260px
       &--image
         max-width: 570px
+  
 
   .clients
     &__row
@@ -136,6 +137,7 @@
     max-width: 550px
 
   .projects
+    padding: 0px 0px 410px 0px
     &__row
       max-width: 80%
       margin: 0 auto
@@ -144,7 +146,7 @@
       min-width: 100%
       align-items: center
     &__description
-      max-width: 315px
+      max-width: 80%
       margin-bottom: 36px
     &__title-word
       justify-content: center
@@ -238,7 +240,6 @@
       &--primary
         margin-bottom: 2.4rem
         margin-bottom: 1.85rem
-
   .contacts
     &__phone
       color: $light
@@ -248,11 +249,11 @@
     &__button
       display: none
   .projects
+    padding: 0px 0px 70px 0px
     &__row
       max-width: 100%
     &__description
       font-size: 14px
-      max-width: 305px
       margin-top: 25px
       margin-bottom: 39px
     &__swiper-slide
@@ -260,16 +261,54 @@
     &__swiper-container
       &--image
         max-height: 100%
-
+  .projects-background
+    background: $dark
+  .control-type-checkout-decor-design-background
+    background: $light
+    padding-top: 0px
+  .control
+    background-color: $dark
+    color: $light
+    margin-top: 0px
+    padding-top: 30px
+    padding-bottom: 0px
+    &__form
+      margin-top: 25px
+    &__email-form
+      margin-top: 59px
+      margin-bottom: 25px
+      font-size: 16px
+    &__label
+      font-size: 16px
+      color: rgba($light, 0.5)
+    &__input
+      padding-top: 2px
+      font-size: 18px
+      border-bottom: 1px solid rgba($light, 0.7)
+      &::placeholder
+        color: $light
+    &__input-email
+      padding-bottom: 5px
+    &__policy
+      margin: 0
+      margin-left: -13px
+      padding-right: 0px
+    &__form-button
+      padding-top: 17px
+      padding-bottom: 16px
+      margin-bottom: -26px 
+      margin-top: 62px
+      min-width: 100%
   .steps
     display: none
-
   .team-and-clients
     padding: 0px 0px 210px 0px
     background-color: $dark
     background-image: none
-  
   .team
+    padding-top: 60px
+    & .page-subtitle
+      max-width: 100%
     &__heading
       color: $light
     &__wrap
@@ -282,17 +321,20 @@
       color: $light
     &__about
       display: none
+    &__col
+      &:first-of-type
+        margin-top: 5px
+      &:last-of-type
+        margin-bottom: 0px
+    &__people-info
+      max-width: 80%
   .clients
     display: none
-  
-
   .footer
     &__content
       background: $dark
     &__wrap
       background: $dark
-
-  .footer
     &__adress-and-map
       margin-top: 0px
     &__policy
@@ -311,20 +353,6 @@
     &__icon a
       width: 40px
       height: 40px
-  
-  .team
-    padding-top: 60px
-    & .page-subtitle
-      max-width: 100%
-    &__col
-      &:first-of-type
-        margin-top: 5px
-      &:last-of-type
-        margin-bottom: 0px
-    &__people-info
-      // padding-right: 10px
-      max-width: 80%
-      
 
 @media screen and ( max-width: 500px )
   .container
@@ -360,18 +388,18 @@
     max-width: 392px
     width: 100%
   .card
-    margin-bottom: -6rem 
+    margin-bottom: -5.4rem
     &__text
       margin: 0
       bottom: 11.55rem
       max-width: 22.5rem
     &__price-tag
       text-align: center
-      bottom: -0.65rem
+      bottom: -1.25rem
       padding: 0.8rem 1rem
       min-width: 15.7rem
     &__list
-      margin: 0 0 2.8rem 1.3rem
+      margin: 0 0 2.8rem 0rem
   .page-subtitle
     max-width: 308px
     margin-bottom: 38px
@@ -400,8 +428,6 @@
     &__nav
       margin-bottom: 2px
   .control
-    background-color: $dark
-    color: $light
     padding-bottom: 0px
     &__video
       margin-top: 40px
@@ -414,32 +440,6 @@
       &::before
         margin-top: 29px
         margin-bottom: 15px
-    &__form
-      margin-top: 25px
-    &__email-form
-      margin-top: 59px
-      margin-bottom: 25px
-      font-size: 16px
-    &__label
-      font-size: 16px
-      color: rgba($light, 0.5)
-    &__input
-      padding-top: 2px
-      font-size: 18px
-      border-bottom: 1px solid rgba($light, 0.7)
-      &::placeholder
-        color: $light
-    &__input-email
-      padding-bottom: 5px
-    &__policy
-      margin: 0
-      margin-left: -13px
-    &__form-button
-      padding-top: 17px
-      padding-bottom: 16px
-      margin-bottom: -26px 
-      margin-top: 62px
-      min-width: 100%
   .policy
     &__label
       &::before
@@ -476,8 +476,14 @@
       padding: 1rem 4.2rem 1rem
 
 @media screen and ( max-width: 376px )
+  .hero
+    padding-bottom: 80px
+    & button
+      &:last-of-type
+        margin-top: 26px
   .projects
     &__description
+      max-width: 305px
       margin-top: 25px
       margin-bottom: 41px
       line-height: 163.84%
@@ -492,29 +498,19 @@
         margin-top: -2px
         margin-bottom: 32px
         max-height: 202px
-    &__swiper-button-prev
-      margin-left: 50%
-      transform: translateX(-248%)
-    &__swiper-button-next
-      margin-left: 50%
-      transform: translateX(-248%)
-    &__swiper-pagination  
-      margin-left: 50%
-      transform: translateX(-120%)
-
   .swiper-text
     &__heading
       margin-bottom: 9px
-
   .control
     &__description
       min-width: 101%
-
   .video
     &__play-button
       max-width: 37px
       max-height: 37px
-
+  .types
+    & .card__text
+      bottom: 11.40rem
   .team
     &__row
       display: flex

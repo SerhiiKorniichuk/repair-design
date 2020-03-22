@@ -1,0 +1,85 @@
+.decor
+  position: relative
+  background: $dark url(../img/decor-bg.png) no-repeat center / cover
+  color: $light
+  min-height: 864px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%)
+  &__row
+    position: relative
+    display: flex
+    justify-content: space-between
+  &__col
+    &--left
+      flex-basis: 37%
+    &--right
+      flex-basis: 63%
+  &__section-title
+    max-width: 29.36rem
+  &__heading
+    margin: 0
+    font-family: 'Yeseva One', sursive
+    font-style: normal
+    font-weight: normal
+    font-size: 1.929rem
+    line-height: 37px
+    text-transform: uppercase
+    color: $primary
+  &__list
+    padding: 0
+    margin: 0
+    list-style: none
+    font-weight: 500
+    font-size: 20px
+  &__item
+    margin-bottom: 18px
+    color: $light
+    cursor: pointer
+    transition: color 0.2s
+    &:last-of-type
+      margin-bottom: 0px
+    &--active
+      color: $primary
+    &::before
+      content: ''
+      position: absolute
+      margin-top: 23px
+      width: 0px
+      height: 1px
+      background-color: $primary
+      transition: width 0.7s
+    &:hover
+      color: $primary
+      &::before
+        width: 146px
+  &__img-wrapper
+    position: absolute
+    right: 0
+    top: 0
+    display: flex
+    justify-content: flex-end
+    opacity: 0
+    &--active
+      opacity: 1
+  &__img-col
+    display: flex
+    flex-direction: column
+    margin-left: 43.2px
+    &:first-of-type
+      margin-left: 0px
+    &--1
+      margin-top: -41px
+    &--3
+      margin-top: -106px
+    & img
+      width: 100%
+      height: auto
+      margin-bottom: 40px
+      &:last-of-type
+        margin-bottom: 0px

@@ -1004,7 +1004,8 @@ input {
 
 .checkout {
   position: relative;
-  margin-top: 160px; }
+  margin-top: 160px;
+  padding-bottom: 150px; }
   .checkout__bg-image {
     max-width: 1438px;
     margin: 0 auto;
@@ -1107,6 +1108,91 @@ input {
     line-height: 25px;
     color: #E3B873;
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15); }
+
+.decor {
+  position: relative;
+  background: #131313 url(../img/decor-bg.png) no-repeat center/cover;
+  color: #fff;
+  min-height: 864px; }
+  .decor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120.96deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%); }
+  .decor__row {
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
+  .decor__col--left {
+    flex-basis: 37%; }
+  .decor__col--right {
+    flex-basis: 63%; }
+  .decor__section-title {
+    max-width: 29.36rem; }
+  .decor__heading {
+    margin: 0;
+    font-family: 'Yeseva One', sursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.929rem;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873; }
+  .decor__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px; }
+  .decor__item {
+    margin-bottom: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.2s; }
+    .decor__item:last-of-type {
+      margin-bottom: 0px; }
+    .decor__item--active {
+      color: #E3B873; }
+    .decor__item::before {
+      content: '';
+      position: absolute;
+      margin-top: 23px;
+      width: 0px;
+      height: 1px;
+      background-color: #E3B873;
+      transition: width 0.7s; }
+    .decor__item:hover {
+      color: #E3B873; }
+      .decor__item:hover::before {
+        width: 146px; }
+  .decor__img-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0; }
+    .decor__img-wrapper--active {
+      opacity: 1; }
+  .decor__img-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 43.2px; }
+    .decor__img-col:first-of-type {
+      margin-left: 0px; }
+    .decor__img-col--1 {
+      margin-top: -41px; }
+    .decor__img-col--3 {
+      margin-top: -106px; }
+    .decor__img-col img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px; }
+      .decor__img-col img:last-of-type {
+        margin-bottom: 0px; }
 
 .design__section {
   margin: 7.142rem 0rem 1.28rem 0rem; }

@@ -375,8 +375,6 @@
       margin-top: 0px
     &__policy
       margin-left: 0px
-    &__map
-      min-height: 255px
     &__adress
       margin-bottom: 55px
       order: 5
@@ -389,6 +387,10 @@
     &__icon a
       width: 40px
       height: 40px
+  #map-yandex 
+    width: 1000px
+    max-width: 100%
+    max-height: 300px
 
 @media screen and ( max-width: 500px )
   .container
@@ -577,10 +579,14 @@
       margin-top: 63px
     &__group-question
       margin-top: 63px
-    &__map
-      margin-top: 45px
-      margin-bottom: 38px
     &__adress-text
       line-height: 26px
     &__icon a
       margin: 20px 8px 0px
+  .ymap-container 
+    margin-top: 45px
+    margin-bottom: 38px
+  #map-yandex 
+    max-width: 340px
+    width: 100%
+    max-height: 255px

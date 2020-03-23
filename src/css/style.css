@@ -474,6 +474,12 @@ body {
 img {
   max-width: 100%; }
 
+.header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .section--dark {
   color: #fff; }
 
@@ -1005,7 +1011,7 @@ input {
 
 .checkout {
   position: relative;
-  margin-top: 160px; }
+  padding-top: 160px; }
   .checkout__bg-image {
     max-width: 1438px;
     margin: 0 auto;

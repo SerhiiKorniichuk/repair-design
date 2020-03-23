@@ -12,15 +12,15 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="menu">
-        <a class="logo menu__logo" href="#">Repair Design Project</a>
+      <div class="menu" id="menu">
+        <a class="logo menu__logo" href="#hero">Repair Design Project</a>
         <nav class="nav">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#hero" class="nav__item">Главная</a>
+          <a href="#projects-scroll" class="nav__item">Проекты</a>
+          <a href="#checkout-scroll" class="nav__item">Замер</a>
+          <a href="#team-scroll" class="nav__item">Команда</a>
+          <a href="#clients-scroll" class="nav__item">Отзывы</a>
+          <a href="#contacts-footer-scroll" class="nav__item">Контакты</a>
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
@@ -35,7 +35,7 @@
   <!-- HEADER -->
   <main>
     <!-- #### HERO - START #### -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="instagram hero__instagram">
         <a href="#" class="instagram__link">Instagram</a>
       </div>
@@ -54,7 +54,7 @@
     <!-- #### HERO - END #### -->
     <div class="projects-background">
       <!-- #### PROJECTS - START #### -->
-      <section class="section section--dark projects">
+      <section class="section section--dark projects" id="projects-scroll">
         <div class="container">
           <div class="projects__row">
             <div class="projects__section-title">
@@ -286,7 +286,7 @@
       <!-- #### TYPES - END #### -->
       <section class="section checkout">
         <div class="checkout__bg-image">
-          <div class="container checkout__container">
+          <div class="container checkout__container"  id="checkout-scroll">
             <div class="checkout__row">
               <div class="checkout__col-left">
                 <span class="checkout__steps checkout__steps--1">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</span>
@@ -746,7 +746,7 @@
     <div class="section team-and-clients">
       <!-- #### TEAM - START #### -->
       <section class="section-team team">
-        <div class="container">
+        <div class="container" id="team-scroll">
           <div class="team__wrap">
             <div class="section-title team__section">
               <h2 class="section-title__heading team__heading">Наша команда</h2>
@@ -840,7 +840,7 @@
       <!-- #### TEAM - END #### -->
       <!-- #### CLIENTS - START #### -->
       <section class="section-clients clients">
-        <div class="container">
+        <div class="container" id="clients-scroll">
           <div class="section-title clients__section">
             <h2 class="section-title__heading clients__heading">Наши клиенты</h2>
             <div class="section-title__image ">
@@ -941,7 +941,7 @@
             <button class="button button--primary footer__button" id="btn-sumbit-footer">Отправить</button>
           </form>
         </div>
-        <div class="footer__adress-and-map">
+        <div class="footer__adress-and-map" id="contacts-footer-scroll">
           <div class="footer__adress">
             <span class="footer__adress-text">Ростов на дону, Торговый центр Plaza Прямой телефон <a href="tel:+79997683299" class="footer__adress-text--phone">+7&nbsp;(999) 768 32 99</a></span>
             <div class="footer__icon">

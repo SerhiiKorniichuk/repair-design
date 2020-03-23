@@ -2216,7 +2216,7 @@ input {
   .footer__map {
     min-height: 255px; }
   .footer__adress {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     order: 5; }
   .footer__adress-text {
     font-size: 18px; }
@@ -2376,14 +2376,29 @@ input {
     max-height: 37px; }
   .types .card__text {
     bottom: 11.40rem; }
-  .team__row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .team__col {
-    padding-left: 35px; }
-  .team img {
-    max-width: 304px; } }
+  .team {
+    padding-bottom: 60px; }
+    .team__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    .team__col {
+      padding-left: 35px; }
+    .team img {
+      max-width: 304px; }
+  .footer__wrap {
+    padding-bottom: 0; }
+  .footer__group-phone {
+    margin-top: 63px; }
+  .footer__group-question {
+    margin-top: 63px; }
+  .footer__map {
+    margin-top: 45px;
+    margin-bottom: 38px; }
+  .footer__adress-text {
+    line-height: 26px; }
+  .footer__icon a {
+    margin: 20px 8px 0px; } }
 
 .animkey {
   -webkit-animation: fadeImUp 2s ease;

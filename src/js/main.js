@@ -318,14 +318,14 @@ $(document).ready(function () {
       scrollTop: 0
     }, delay);
   });
-  $('.hero__scroll-down').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
-  /* Плавная прокрутка наверх */
-    $('body, html').animate({
-      scrollTop: 700
-    }, delay);
-  });
+  // $('.hero__scroll-down').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+  // /* Плавная прокрутка наверх */
+  //   $('body, html').animate({
+  //     scrollTop: 700
+  //   }, delay);
+  // });
 
-  $("#menu").on("click","a", function (event) {
+  $("#menu, #footer-menu, #hero").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;

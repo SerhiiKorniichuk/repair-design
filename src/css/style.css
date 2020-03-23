@@ -468,7 +468,8 @@ html {
 
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  outline: none; }
 
 img {
   max-width: 100%; }
@@ -2021,7 +2022,7 @@ input {
     margin-top: 20px;
     max-width: 210px; }
   .control__input {
-    color: #fff; }
+    color: #131313; }
   .control__policy {
     margin-top: 0px; }
   .team__wrap {
@@ -2123,9 +2124,10 @@ input {
       margin-bottom: 25px;
       font-size: 16px; }
     .control__label {
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.5); }
+      color: #fff;
+      font-size: 16px; }
     .control__input {
+      color: #fff;
       padding-top: 2px;
       font-size: 18px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.7); }

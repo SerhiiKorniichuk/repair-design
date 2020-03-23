@@ -194,7 +194,7 @@ $(document).ready(function () {
     $(blockNumber[0]).removeClass('pagination-steps__block--active');
     $(blockNumber[6]).addClass('pagination-steps__block--active');
   });
-  // ###### SLIDER - STEPS 2 - END ###### //
+  // ###### SLIDER 2 - STEPS - END ###### //
 
 
    // ###### SLIDER 3 - DECOR - START ###### //
@@ -318,6 +318,12 @@ $(document).ready(function () {
       scrollTop: 0
     }, delay);
   });
+  $('.hero__scroll-down').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+  /* Плавная прокрутка наверх */
+    $('body, html').animate({
+      scrollTop: 700
+    }, delay);
+  });
 
 
   // new WOW().init();
@@ -418,50 +424,6 @@ $(document).ready(function () {
   
   
   }
-
-  var el1 = $('.projects__row');
-  var el2 = $('.control__container');
-  var el3 = $('.types__container');
-  var el4 = $('.types_card1');
-  var el5 = $('.types_card2');
-  var el6 = $('.types_card3');
-  var el7 = $('.design__container');
-  var el8 = $('.design__card1');
-  var el9 = $('.design__card2');
-  var el10 = $('.design__card3');
-  $(window).scroll(function(){
-    if ( $(this).scrollTop() > el1.offset().top - $(window).height()) {
-        el1.addClass('animkey');
-    }
-    if ( $(this).scrollTop() > el2.offset().top - $(window).height()) {
-        el2.addClass('animkey');
-    }
-    if ( $(this).scrollTop() > el3.offset().top - $(window).height()) {
-        el3.addClass('animkey');
-    }
-    if ( $(this).scrollTop() > el4.offset().top - $(window).height()) {
-      el4.addClass('animkeyForCards1');
-    }
-    if ( $(this).scrollTop() > el5.offset().top - $(window).height()) {
-      el5.addClass('animkeyForCards2');
-    }
-    if ( $(this).scrollTop() > el6.offset().top - $(window).height()) {
-      el6.addClass('animkeyForCards3');
-    }
-    if ( $(this).scrollTop() > el7.offset().top - $(window).height()) {
-      el7.addClass('animkey');
-    }
-    if ( $(this).scrollTop() > el8.offset().top - $(window).height()) {
-      el8.addClass('animkeyForCards1');
-    }
-    if ( $(this).scrollTop() > el9.offset().top - $(window).height()) {
-      el9.addClass('animkeyForCards2');
-    }
-    if ( $(this).scrollTop() > el10.offset().top - $(window).height()) {
-      el10.addClass('animkeyForCards3');
-    }
-  });
-
 
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {

@@ -353,7 +353,7 @@ $(document).ready(function () {
   //   }, delay);
   // });
 
-  $("#menu, #footer-menu, #hero").on("click","a", function (event) {
+  $("#menu-nav, #footer-nav, #hero").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;

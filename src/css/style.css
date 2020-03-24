@@ -1651,7 +1651,6 @@ input {
 
 .modal {
   opacity: 0;
-  overflow: auto;
   visibility: hidden;
   display: flex;
   justify-content: center;
@@ -1669,6 +1668,8 @@ input {
     opacity: 1;
     visibility: visible; }
   .modal__dialog {
+    overflow: auto;
+    max-height: 100%;
     position: relative;
     padding: 2.357rem 3.49rem 1.928rem 3.5rem;
     background: #131313 url("../img/modal_bg.svg") no-repeat center/100%;

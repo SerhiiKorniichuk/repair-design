@@ -2110,7 +2110,7 @@ input {
     background-color: #E3B873; }
   .video__play-button:hover {
     box-shadow: none; }
-  .footer__adress-text:hover {
+  .footer__adress-text a:hover {
     color: #E3B873; }
   .footer__icon a:hover {
     background-color: #E3B873;

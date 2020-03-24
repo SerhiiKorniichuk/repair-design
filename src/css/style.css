@@ -413,8 +413,8 @@ template {
   bottom: 10px;
   cursor: pointer;
   font-size: 150%;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border: none;
   background-color: transparent;
   -webkit-animation: 3s linear 1s;

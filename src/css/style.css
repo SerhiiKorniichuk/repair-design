@@ -423,8 +423,6 @@ template {
     border: 3px solid #E3B873;
     border-radius: 50%;
     background: url(../img/arrow-up.svg) no-repeat center/50%; }
-  .button-go-up:hover {
-    opacity: 1; }
 
 div.invalid {
   position: absolute;
@@ -693,7 +691,7 @@ input {
       display: flex;
       position: absolute;
       bottom: 0;
-      margin-bottom: 39px;
+      margin-bottom: 2.786rem;
       background-color: #E3B873;
       width: 0px;
       height: 1px;
@@ -713,7 +711,7 @@ input {
       display: flex;
       position: absolute;
       bottom: 0;
-      margin-bottom: 39px;
+      margin-bottom: 2.786rem;
       background-color: #E3B873;
       width: 102px;
       height: 1px; }
@@ -1018,9 +1016,6 @@ input {
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
   transition: box-shadow 0.5s; }
   .video__play-button:hover {
-    max-width: 85px;
-    max-height: 85px;
-    border-radius: 50%;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); }
 
 .types__section {
@@ -2033,8 +2028,7 @@ input {
   html {
     font-size: 12px; }
   .hero__scroll-down:hover::before {
-    transform: translateX(-24px);
-    width: 90px; }
+    width: 87px; }
   .nav__item {
     margin-right: 1.5rem; }
   .contacts__phone {
@@ -2085,6 +2079,39 @@ input {
     margin-top: 100px; } }
 
 @media screen and (max-width: 991px) {
+  .logo:hover {
+    color: #E3B873; }
+  .nav__item:hover {
+    color: #fff; }
+  .contacts__phone:hover {
+    color: #E3B873; }
+  .instagram__link:hover {
+    color: #E3B873; }
+    .instagram__link:hover::after {
+      background-color: #E3B873; }
+  .button--primary:hover {
+    background-color: #e3b873;
+    border: 0.07rem solid #E3B873;
+    box-shadow: 0rem 0.35rem 1.07rem rgba(227, 184, 115, 0.3); }
+  .button--outline:hover {
+    background-color: transparent;
+    box-shadow: none; }
+  .button-go-up {
+    opacity: 1; }
+  .hero__scroll-down:hover::before {
+    width: 0px; }
+  .control__form-button:hover {
+    color: #fff;
+    border: 0.07rem solid #E3B873;
+    box-shadow: none;
+    background-color: #E3B873; }
+  .video__play-button:hover {
+    box-shadow: none; }
+  .footer__adress-text:hover {
+    color: #E3B873; }
+  .footer__icon a:hover {
+    background-color: #E3B873;
+    border: 2px solid #E3B873; }
   .nav__item {
     display: none; }
   .row {

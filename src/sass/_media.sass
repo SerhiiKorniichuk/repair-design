@@ -65,8 +65,7 @@
     &__scroll-down
       &:hover
         &::before
-          transform: translateX(-24px)
-          width: 90px
+          width: 87px
   .nav
     &__item
       margin-right: 1.5rem
@@ -123,6 +122,60 @@
     margin-top: 100px
 
 @media screen and ( max-width: 991px )
+  .logo
+    &:hover
+      color: $primary
+  .nav
+    &__item
+      &:hover
+        color: $light
+  .contacts
+    &__phone
+      &:hover
+        color: $primary
+  .instagram
+    &__link
+      &:hover
+        color: $primary
+        &::after
+          background-color: $primary
+  .button
+    &--primary
+      &:hover
+        background-color: rgba($primary, 1)
+        border: 0.07rem solid $primary
+        box-shadow: 0rem 0.35rem 1.07rem rgba($primary, 0.3)
+    &--outline
+      &:hover
+        background-color: transparent
+        box-shadow: none
+  .button-go-up
+    opacity: 1
+  .hero
+    &__scroll-down
+      &:hover
+        &::before
+          width: 0px
+  .control
+    &__form-button
+      &:hover
+        color: $light
+        border: 0.07rem solid $primary
+        box-shadow: none
+        background-color: $primary
+  .video
+    &__play-button
+      &:hover
+        box-shadow: none
+  .footer
+    &__adress-text
+      &:hover
+        color: $primary
+    &__icon a
+      &:hover
+        background-color: $primary
+        border: 2px solid $primary
+
   .nav
     &__item
      display: none 

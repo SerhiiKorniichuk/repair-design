@@ -42,28 +42,35 @@
     list-style: none
     font-weight: 500
     font-size: 20px
-  &__item
+  &__item-box
+    display: block
     margin-bottom: 1.571rem
+  &__item
+    position: relative
+    display: inline-block
+    font-size: 1.714rem
     color: $light
     cursor: pointer
     transition: color 0.2s
-    font-size: 1.714rem
     &:last-of-type
       margin-bottom: 0px
-    &--active
-      color: $primary
     &::before
       content: ''
       position: absolute
       margin-top: 26px
-      width: 0px
+      width: 0%
       height: 1px
       background-color: $primary
       transition: width 0.7s
+    &--active
+      display: inline-block
+      color: $primary
+      &::before
+        width: 100%
     &:hover
       color: $primary
       &::before
-        width: 146px
+        width: 100%
   &__img-wrapper
     display: none
     justify-content: flex-end

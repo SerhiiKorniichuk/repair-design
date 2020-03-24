@@ -38,42 +38,52 @@
     height: 100%
     font-family: 'FuturaDemiC', sans-serif
     font-weight: 600
-  &__scroll-down
+  &__container-scroll-down
     display: flex
     position: absolute
     z-index: 3
     justify-content: center
-    align-items: center
     left: 0
     bottom: 0
-    min-width: 17.64rem
-    min-height: 6.92rem
     background-color: $dark
+  &__scroll-down
+    padding: 23px 48px 41px 48px
+    color: $light
     font-family: 'Yeseva One', cursive
     font-size: 0.85rem
     line-height: 138.6%
     text-transform: uppercase
     text-decoration: none
-    color: $light
+    &::before
+      content: ''
+      display: flex
+      position: absolute
+      bottom: 0
+      margin-bottom: 39px
+      background-color: $primary
+      width: 0px
+      height: 1px
+      transition: width 0.7s
+    &::after
+      content: ''
+      display: inline-block
+      width: 29px
+      height: 29px
+      border: 2px solid $primary
+      transform: translateY(10px)
+      border-radius: 50%
+      background: url(../img/arrow-down.svg) no-repeat center
+      margin-left: 19px
     &:hover
       &::before
         content: ''
         display: flex
         position: absolute
-        margin-top: 8px
-        margin-right: 100px
-        transform: translateX(-24px)
+        bottom: 0
+        margin-bottom: 39px
         background-color: $primary
-        width: 105px
+        width: 102px
         height: 1px
-    &::after
-      content: ''
-      width: 29px
-      height: 29px
-      border: 2px solid $primary
-      border-radius: 50%
-      background: url(../img/arrow-down.svg) no-repeat center
-      margin-left: 19px
   &__text
     max-width: 36rem
     font-size: 1.57rem

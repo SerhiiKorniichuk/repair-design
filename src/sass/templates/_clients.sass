@@ -26,10 +26,19 @@
     align-items: center
     margin-bottom: 16px
   &__image
-    width: 5.428rem
-    height: 5.428rem
-    object-fit: cover
+    min-width: 76px
+    min-height: 76px
     border-radius: 50%
+    background-color: $light
+    background-position: center center
+    background-size: cover
+    &--1
+      background-image: url('../img/client1.png')
+    &--2
+      background-image: url('../img/client2.png')
+    &--3
+      background-image: url('../img/client3.png')
+      
   &__info
     margin-top: 2px
     font-family: 'Yeseva One', cursive

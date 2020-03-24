@@ -1572,11 +1572,18 @@ input {
   margin-bottom: 16px; }
 
 .client__image {
-  width: 5.428rem;
-  height: 5.428rem;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 50%; }
+  min-width: 76px;
+  min-height: 76px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-position: center center;
+  background-size: cover; }
+  .client__image--1 {
+    background-image: url("../img/client1.png"); }
+  .client__image--2 {
+    background-image: url("../img/client2.png"); }
+  .client__image--3 {
+    background-image: url("../img/client3.png"); }
 
 .client__info {
   margin-top: 2px;

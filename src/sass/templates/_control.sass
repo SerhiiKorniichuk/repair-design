@@ -7,6 +7,7 @@
     position: relative
     display: flex
     max-width: 58.4rem
+    width: 100%
     min-height: 31rem
     margin: 0 auto
     margin-top: 2.229rem
@@ -101,10 +102,16 @@
 
 
 
-
 .video
   &__play-button
+    cursor: pointer
     max-width: 85px
     max-height: 85px
     position: relative
     margin: auto
+    border-radius: 50%
+    box-shadow: 0px 0px 20px  rgba($light, 0)
+    transition: box-shadow 0.5s 
+    &:hover
+      border-radius: 50%
+      box-shadow: 0px 0px 20px  rgba($light, 0.5)

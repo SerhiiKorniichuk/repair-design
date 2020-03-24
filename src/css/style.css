@@ -1469,17 +1469,21 @@ input {
     flex-direction: column; }
   .team__icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
+    justify-content: center;
     left: -35px;
     top: -35px;
     min-width: 70px;
     min-height: 70px;
     background-color: #E3B873;
+    background: #E3B873 url("../img/team_icon1.svg") no-repeat center;
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
-    .team__icon img {
-      display: block; }
+    .team__icon--1 {
+      background: #E3B873 url("../img/team_icon1.svg") no-repeat center; }
+    .team__icon--2 {
+      background: #E3B873 url("../img/team_icon2.svg") no-repeat center; }
+    .team__icon--3 {
+      background: #E3B873 url("../img/team_icon3.svg") no-repeat center; }
   .team__image--main {
     left: 0;
     top: 0;

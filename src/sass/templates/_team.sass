@@ -26,19 +26,23 @@
     flex-direction: column
   &__icon
     display: flex
-    justify-content: center
-    align-items: center
     position: absolute
+    justify-content: center
     left: -35px
     top: -35px
     min-width: 70px
     min-height: 70px
     background-color: $primary
+    background: $primary url('../img/team_icon1.svg') no-repeat center
     box-shadow: 0px 5px 20px rgba($primary, 0.5)
-    & img
-      display: block
+    &--1
+      background: $primary url('../img/team_icon1.svg') no-repeat center
+    &--2
+      background: $primary url('../img/team_icon2.svg') no-repeat center
+    &--3
+      background: $primary url('../img/team_icon3.svg') no-repeat center
+
   &__image
-    // padding-top: 35px
     &--main
       left: 0
       top: 0

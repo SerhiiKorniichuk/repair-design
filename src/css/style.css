@@ -1651,6 +1651,7 @@ input {
 
 .modal {
   opacity: 0;
+  overflow: auto;
   visibility: hidden;
   display: flex;
   justify-content: center;

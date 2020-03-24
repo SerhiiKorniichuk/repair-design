@@ -43,6 +43,34 @@ $(document).ready(function () {
       });
 
 
+
+
+  // ###### YOUTUBE - VIDEO - START ###### //
+  var player;
+  $('.video__play-button').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      // height: '360',
+      width: '100%',
+      videoId: '_Qhqb8DrTNA',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  });
+  
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+  // ###### YOUTUBE - VIDEO - END ###### //
+
+
+
+
+
+
+
+
+
   // ###### SLIDER 1 START ###### //
   var SwiperProjects = new Swiper ('.projects__swiper-container',  {
     loop: true,

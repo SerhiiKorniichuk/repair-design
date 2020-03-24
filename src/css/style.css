@@ -645,6 +645,7 @@ input {
   .hero::after {
     content: '';
     position: absolute;
+    margin-bottom: -1px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -2305,7 +2306,7 @@ input {
     padding-top: 1px;
     background: #131313;
     margin-top: 0px;
-    margin-bottom: 0; }
+    margin-bottom: -1px; }
     .decor::before {
       display: none; }
     .decor__slider {
@@ -2323,6 +2324,7 @@ input {
       color: #fff; }
   .team-and-clients {
     padding: 0px 0px 210px 0px;
+    margin-bottom: -1px;
     background-color: #131313;
     background-image: none; }
   .team {

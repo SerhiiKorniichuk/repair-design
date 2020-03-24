@@ -335,7 +335,6 @@ template {
   transition: 0.2s;
   font-family: 'FuturaDemiC', sans-serif;
   line-height: 1.07rem;
-  font-weight: 600;
   font-size: 13px; }
   .button--primary {
     background-color: #e3b873;
@@ -592,7 +591,6 @@ input {
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1.14rem;
-  font-weight: 600;
   font-family: 'FuturaDemiC', sans-serif;
   transition: color 0.2s; }
   .logo:hover {
@@ -618,7 +616,6 @@ input {
 .contacts__phone {
   font-family: 'FuturaDemiC', sans-serif;
   font-style: normal;
-  font-weight: 600;
   line-height: 1.14rem;
   margin-right: 3rem;
   text-decoration: none;
@@ -674,8 +671,7 @@ input {
     top: 0;
     max-width: 5.85rem;
     height: 100%;
-    font-family: 'FuturaDemiC', sans-serif;
-    font-weight: 600; }
+    font-family: 'FuturaDemiC', sans-serif; }
   .hero__container-scroll-down {
     display: flex;
     position: absolute;
@@ -991,7 +987,6 @@ input {
     background-color: #E3B873;
     font-family: 'FuturaDemiC', sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 15px;
     line-height: 18px; }
     .control__form-button:hover {
@@ -1097,7 +1092,6 @@ input {
     max-width: 21.22rem;
     font-family: 'FuturaDemiC', sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 1.429rem;
     line-height: 25px;
     text-align: center;
@@ -1139,7 +1133,6 @@ input {
     max-width: 22.715rem;
     font-family: 'FuturaDemiC', sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 1.429rem;
     line-height: 25px;
     color: #E3B873;
@@ -1301,7 +1294,6 @@ input {
   .steps__description {
     font-family: FuturaDemiC, sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 1.071rem;
     line-height: 21px;
     text-transform: uppercase; }
@@ -1853,7 +1845,6 @@ input {
     margin-top: 3.6rem;
     font-family: FuturaDemiC, sans-serif;
     font-style: normal;
-    font-weight: 600;
     font-size: 15px;
     line-height: 26px;
     text-align: center;

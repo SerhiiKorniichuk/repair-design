@@ -20,6 +20,13 @@
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/futura/Futura.woff") format("woff"), url("../fonts/futura/Futura.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -400,6 +407,7 @@ template {
 
 .button-go-up {
   display: none;
+  z-index: 100;
   position: fixed;
   right: 10px;
   bottom: 10px;
@@ -423,6 +431,8 @@ template {
     border: 3px solid #E3B873;
     border-radius: 50%;
     background: url(../img/arrow-up.svg) no-repeat center/50%; }
+  .button-go-up:hover {
+    opacity: 1; }
 
 div.invalid {
   position: absolute;
@@ -575,7 +585,7 @@ input {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 98;
   background-color: #131313;
   padding: 24px 0px; }
 
@@ -1181,10 +1191,12 @@ input {
     display: block;
     margin-bottom: 1.571rem; }
   .decor__item {
+    font-family: 'Futura', sans-serif;
+    font-size: 1.429rem;
     position: relative;
     display: inline-block;
-    font-size: 1.714rem;
     color: #fff;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: color 0.2s; }
     .decor__item:last-of-type {

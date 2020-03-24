@@ -685,7 +685,7 @@ input {
     bottom: 0;
     background-color: #131313; }
   .hero__scroll-down {
-    padding: 23px 48px 41px 48px;
+    padding: 1.643rem 3.429rem 2.929rem 3.429rem;
     color: #fff;
     font-family: 'Yeseva One', cursive;
     font-size: 0.85rem;
@@ -1316,11 +1316,14 @@ input {
     text-transform: uppercase;
     color: #E3B873; }
     .steps__heading--block {
+      position: relative;
       display: flex;
       align-items: center; }
       .steps__heading--block::after {
         content: '';
         position: absolute;
+        left: 0;
+        top: 0;
         margin-left: 15.143rem;
         width: 92px;
         height: 1px;

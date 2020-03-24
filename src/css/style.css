@@ -451,7 +451,7 @@ input.invalid {
 .container {
   width: 90%;
   max-width: 1238px;
-  margin: auto; }
+  margin: 0 auto; }
 
 .row {
   display: flex;

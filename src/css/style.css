@@ -2115,7 +2115,7 @@ input {
   .nav__item:hover {
     color: #fff; }
   .contacts__phone:hover {
-    color: #fff; }
+    color: #E3B873; }
   .instagram__link:hover {
     color: #E3B873; }
     .instagram__link:hover::after {
@@ -2263,6 +2263,8 @@ input {
   .contacts__phone {
     color: #fff;
     margin-right: 0rem; }
+    .contacts__phone:hover {
+      color: #fff; }
     .contacts__phone::after {
       display: none; }
   .contacts__button {

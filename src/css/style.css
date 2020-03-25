@@ -1218,11 +1218,11 @@ input {
       display: inline-block;
       color: #E3B873; }
       .decor__item--active::before {
-        width: 100%; }
+        width: 60%; }
     .decor__item:hover {
       color: #E3B873; }
       .decor__item:hover::before {
-        width: 100%; }
+        width: 60%; }
   .decor__img-wrapper {
     display: none;
     justify-content: flex-end;

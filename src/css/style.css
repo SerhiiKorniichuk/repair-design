@@ -1412,7 +1412,8 @@ input {
     color: #959595;
     margin: 0px 0px 0px 30px;
     min-width: 30%;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.2s; }
     .pagination-steps__block--1 {
       margin-left: 0;
       margin-bottom: 40px; }
@@ -1430,6 +1431,8 @@ input {
       min-width: 13%;
       margin-bottom: 44px; }
     .pagination-steps__block--active {
+      color: #fff; }
+    .pagination-steps__block:hover {
       color: #fff; }
   .pagination-steps__number {
     position: relative;

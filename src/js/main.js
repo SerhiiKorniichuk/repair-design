@@ -63,7 +63,6 @@ $(document).ready(function () {
   // ###### SLIDER 1 START ###### //
   var SwiperProjects = new Swiper ('.projects__swiper-container',  {
     loop: true,
-    effect: 'fade',
     spaceBetween: 30,
     pagination: {
       el: '.projects__swiper-pagination',
@@ -86,7 +85,6 @@ $(document).ready(function () {
   // ###### SLIDER 2 - STEPS - START ###### //
   var stepsProjects = new Swiper ('.steps__swiper-container',  {
     loop: true,
-    effect: 'fade',
     spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination.steps__pagination',
@@ -316,7 +314,6 @@ $(document).ready(function () {
  // ###### SLIDER 4 - DECOR2 - START ###### //
   var SwiperDecor = new Swiper ('.decor__swiper-container',  {
     loop: true,
-    effect: 'fade',
     spaceBetween: 30,
     navigation: {
       nextEl: '.decor__swiper-button-next',

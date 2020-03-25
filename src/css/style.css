@@ -1568,6 +1568,7 @@ input {
 
 .clients__card {
   position: relative;
+  width: 100%;
   max-width: 26.857rem;
   padding: 26px 21px 67px;
   background-color: #fff;

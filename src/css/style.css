@@ -794,7 +794,7 @@ input {
     flex-direction: column;
     max-width: 31.57rem; }
   .projects__heading {
-    font-family: Yeseva One;
+    font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 27px;
@@ -2259,9 +2259,15 @@ input {
   .contacts__button {
     display: none; }
   .projects {
+    text-align: left;
     padding: 0px 0px 70px 0px; }
     .projects__row {
       max-width: 100%; }
+    .projects__section-title {
+      align-items: start;
+      text-align: left; }
+    .projects__title-word {
+      justify-content: start; }
     .projects__description {
       font-size: 14px;
       margin-top: 25px;

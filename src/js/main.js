@@ -75,6 +75,7 @@ $(document).ready(function () {
   var SwiperProjects = new Swiper ('.projects__swiper-container',  {
     loop: true,
     effect: 'fade',
+    spaceBetween: 30,
     pagination: {
       el: '.projects__swiper-pagination',
       type: 'bullets'
@@ -97,6 +98,7 @@ $(document).ready(function () {
   var stepsProjects = new Swiper ('.steps__swiper-container',  {
     loop: true,
     effect: 'fade',
+    spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination.steps__pagination',
       clickable: true,
@@ -326,6 +328,7 @@ $(document).ready(function () {
   var SwiperDecor = new Swiper ('.decor__swiper-container',  {
     loop: true,
     effect: 'fade',
+    spaceBetween: 30,
     navigation: {
       nextEl: '.decor__swiper-button-next',
       prevEl: '.decor__swiper-button-prev',

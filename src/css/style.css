@@ -2390,6 +2390,10 @@ input {
   .footer__icon a {
     width: 40px;
     height: 40px; }
+  .footer__email {
+    background-size: 60%; }
+  .footer__instagram {
+    background-size: 55%; }
   #map-yandex {
     width: 1000px;
     max-width: 100%;

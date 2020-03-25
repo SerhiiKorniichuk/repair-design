@@ -375,14 +375,19 @@ template {
   padding: 0.5rem 0rem 0.571rem 0rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
   .input::-webkit-input-placeholder {
+    opacity: 1;
     color: #fff; }
   .input::-moz-placeholder {
+    opacity: 1;
     color: #fff; }
   .input:-ms-input-placeholder {
+    opacity: 1;
     color: #fff; }
   .input::-ms-input-placeholder {
+    opacity: 1;
     color: #fff; }
   .input::placeholder {
+    opacity: 1;
     color: #fff; }
 
 .policy__checkbox {

@@ -416,6 +416,7 @@ $(document).ready(function () {
             $(form)[0].reset();
             modal.removeClass('modal--visible');
             ajaxSuccessModal.addClass('ajax-success--visible');
+            ym(61248256, 'reachGoal', 'send-form-success'); return true;
           }
         });
       },

@@ -12,6 +12,7 @@ function bs() {
     server: {
       baseDir: './src'
     }
+    // proxy:
   });
   watch('./src/*.html').on('change', browserSync.reload);
   watch('./src/sass/**/*.sass', serveSass);

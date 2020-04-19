@@ -1,3 +1,3 @@
 # repair-design
-Сайт компании по ремонту квартир
+Site:
 http://sk-coder.ru/repair-design/

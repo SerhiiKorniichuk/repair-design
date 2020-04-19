@@ -1,3 +1,3 @@
 # repair-design
 Сайт компании по ремонту квартир
-https://serhiikorniichuk.github.io/repair-design/src/
+http://sk-coder.ru/repair-design/
